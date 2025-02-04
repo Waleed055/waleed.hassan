@@ -3,732 +3,710 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="Waleed Hassan" name="viewport">
-
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Waleed Hassan</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.jpg" rel="apple-touch-icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: May 30 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
 
-<body>
+<body class="index-page">
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Porfolio</h1>
+      </a>
 
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Waleed Hassan</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/Waleedhassan_" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://web.facebook.com/waleed.hassan.96995238" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/waleeed_hasssan/" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://join.skype.com/invite/VShBGhnApJ2Q" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/waleed-hassan-b211901bb" class="linkedin"><i
-              class="bx bxl-linkedin"></i></a>
-        </div>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-img.png" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>I am Waleed Hassan, Sr. Software Engineer</h2>
+        <p><span class="typed" data-typed-items="Android Development, Flutter Development, Laravel Development, UI/UX Designing"></span></p>
       </div>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
-              <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
+    </section><!-- /Hero Section -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Waleed Hassan</h1>
-      <p>I'm <span class="typed" data-typed-items="Full Stack Developer"></span></p>
-    </div>
-  </section><!-- End Hero -->
+    <!-- About Section -->
+    <section id="about" class="about section">
 
-  <main id="main">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-6">
 
-        <div class="section-title">
-          <h2>About</h2>
-          <p>A passionate, customer-focused, creative Software Engineer who can think out of the box, I solved problems
-            in a creative way with less effort but maximum output. I'm very much enthusiastic about being a full-stack
-            developer who can provide a perfect solution to his customer. I have expertise in Mobile Application
-            Development (Android, Flutter, and IOS), RESTful APIs with the Laravel framework. The best part is "I KNOW
-            WHAT I'M DOING.."</p>
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="assets/img/profile-img.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info margin-top-80">
+                <p><strong>Name: </strong> <span>Waleed Hassan</span></p>
+                <p><strong>Profile: </strong> <span>Mobile App Developer</span></p>
+                <p><strong>Email: </strong> <span>waleedhassan4311@gmail.com</span></p>
+                <p><strong>Phone: </strong> <span>+92 323 5067742</span></p>
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill"><span>Android Development</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Flutter Development</span> <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>PHP Laravel</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>UI/UX</span> <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                I am a passionate and customer-focused Software Engineer who thrives on solving complex problems with creative and efficient solutions. With a strong foundation in mobile application development (Android, Flutter, iOS) and RESTful API development using Laravel, I specialize in crafting high-performance, user-friendly, and scalable applications.
+              </p>
+              <p>
+                Beyond just writing code, I focus on creating seamless user experiences through UI/UX design, efficient API integrations, and robust full-stack solutions. My ability to manage projects effectively while understanding client needs allows me to deliver tailored solutions that exceed expectations.
+              </p>
+              <p>
+                I believe in thinking outside the box and bringing innovative ideas to life with minimal effort and maximum impact. The best part?
+                <b>"I KNOW WHAT I'M DOING."</b>
+              </p>
+            </div>
+          </div>
         </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Want to know more about my work? Check out my resume for a deep dive into my skills and experience.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
 
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Full Stack Developer</h3>
-            <p class="fst-italic">
-              I am an Full-Stack developer who has a track record of success in creating projects that are both
-              well-received and commercially viable. Skilled in working as a team and incorporating input into projects.
-              Ability to always look for ways to improve upon an already existing project to keep people downloading it
-              and enjoying it. Strong eye for detail and tenacity to never quit. I look at the broader picture and make
-              the projects result-oriented so that they can be attractive to the end user.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
-                    <span>waleedhassan4311@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+92 323 5067742</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Lahore, Pakistan</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BS. Computer Science</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance/Remote:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Facts</h2>
-          <p>In my portfolio, you will see a track record of completing numerous projects and satisfying clients
-            consistently. I have successfully delivered hundreds of projects, meeting client requirements and exceeding
-            expectations. With effective project management, open communication, and collaboration, I ensure on-time and
-            within-budget delivery. Positive client feedback and long-term partnerships validate my ability to
-            understand their vision and achieve their goals.</p>
-        </div>
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Happy Clients</strong></p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="150">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="260" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Projects</strong></p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Hours Of Support</strong></p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Facts Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">Android (java/kotlin) <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Graphic Designing <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Hybrid Apps (Flutter)<i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">Backend (PHP)<i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Web Development<i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-        </div>
-
-        <div class="row" >
-          
-          <div class="col-lg-4" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Waleed Hassan</h4>
-              <p style="font-size:12px;"><em>I am an Full-Stack developer who has a track record of success in creating projects that are both
-                  well-received and commercially viable. Skilled in working as a team and incorporating input into
-                  projects. Ability to always look for ways to improve upon an already existing project to keep people
-                  downloading it and enjoying it. Strong eye for detail and tenacity to never quit. I look at the
-                  broader picture and make the projects result-oriented so that they can be attractive to the end
-                  user.</em></p>
-              <ul>
-                <li style="font-size:12px;">Lahore, Pakistan</li>
-                <li style="font-size:12px;">(+92) 323 5067742</li>
-                <li style="font-size:12px;">waleedhassan4311@gmail.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Graduation</h4>
-              <h5>2015 - 2019</h5>
-              <p><b>Government Collage University, Lahore (GCUL)</b></p>
-              <p style="font-size:12px;">I completed my graduation from Government College University Lahore (GCUL) with the batch of 2015 to
-                2019. During my time at GCUL, I pursued my degree with dedication and enthusiasm, actively engaging in
-                coursework and extracurricular activities. The university provided me with a strong academic foundation
-                and valuable learning experiences, contributing to my personal and professional growth.</p>
-            </div>
-            <div class="resume-item">
-              <h4>Inter</h4>
-              <h5>2013 - 2015</h5>
-              <p><b>Islamia College Civil lines, Lahore</b></p>
-              <p style="font-size:12px;">I completed my graduation from Govt. Islamia College Civil Lines, Lahore with the batch of 2013 to
-                2015. During my time, I pursued my degree with dedication and enthusiasm, actively engaging in
-                coursework and extracurricular activities. </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Professional Experience</h3>
+
             <div class="resume-item">
-              <h4>Senior Android Developer</h4>
-              <h5>2021 - Present</h5>
-              <p><b>Ozi Technology</b> | Arfa karim tower, Lahore</p>
-              <ul>
-                <li style="font-size:12px;">Led multiple projects.</li>
-                <li style="font-size:12px;">Presented effectively.</li>
-                <li style="font-size:12px;">Client leadership.</li>
-                <li style="font-size:12px;">Strategic planning</li>
-              </ul>
-            </div>
+              <h1><b>Techreneur Solutions</b></h1>
+              <h4><b>Associate Software Engineer - Android</b></h4>
+              <p><em>2020-2022 -  Lahore, Pakistan</em></p>
+    					<p class="mt-4">As an Associate Software Engineer – Android, I contributed to building robust, user-friendly applications using modern Android development tools and frameworks, ensuring seamless performance and an engaging user experience.</p>
+            </div><!-- Edn Resume Item -->
+
             <div class="resume-item">
-              <h4>Android Developer</h4>
-              <h5>2018 - 2021</h5>
-              <p><b>Techreneur Solutions.</b> | Lahore</p>
-              <ul>
-                <li style="font-size:12px;">Led multiple projects.</li>
-                <li style="font-size:12px;">Issue resolution.</li>
-                <li style="font-size:12px;">Team mentorship.</li>
-                <li style="font-size:12px;">Client leadership.</li>
-                <li style="font-size:12px;">Recognized leadership</li>
-              </ul>
-            </div>
+              <h1><b>Ozi Technology</b></h1>
+              <h4><b>Sr. Software Engineer - Android</b></h4>
+              <p><em>2022-2024 - Lahore, Pakistan (Hybrid)</em></p>
+    					<p class="mt-4">As a Senior Software Engineer – Android,  I design and develop high-performance mobile applications using Kotlin, Java, and modern Android architectures like MVVM. I specialize in building scalable, user-friendly solutions while integrating RESTful APIs, Firebase, and third-party SDKs.</p>
+            </div><!-- Edn Resume Item -->
+
             <div class="resume-item">
-              <h4>Android Developer</h4>
-              <h5>2019 - Present</h5>
-              <p><b>Fiverr</b> &amp; <b>Upwork</b></p>
-              <ul>
-                <li style="font-size:12px;">Led multiple projects.</li>
-                <li style="font-size:12px;">Issue resolution.</li>
-                <li style="font-size:12px;">Uploaded many  apps on Play Store.</li>
-                <li style="font-size:12px;">Client Satisfaction.</li>
-                <li style="font-size:12px;">Met deadlines.</li>
-                <li style="font-size:12px;">Bug free code.</li>
-              </ul>
-            </div>
+              <h1><b>Razzaq.com</b></h1>
+              <h4><b>Sr. Software Engineer - Flutter</b></h4>
+              <p><em>2023-2024 - Remote</em></p>
+    					<p class="mt-4">As a Senior Software Engineer – Flutter, As a Software Engineer – Flutter, I develop cross-platform mobile applications with a focus on performance, scalability, and user experience. I specialize in Dart, Flutter widgets, state management (Provider, Riverpod, Bloc), and REST API integration to build seamless and efficient apps.</p>
+            </div><!-- Edn Resume Item -->
+
           </div>
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">.. </h3>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <!-- <h3 class="resume-title">Professional Experience</h3> -->
             <div class="resume-item">
-              <h4>Flutter Developer</h4>
-              <h5>2021 - Present</h5>
-              <p><b>Fiverr</b> &amp; <b>Upwork</b></p>
-              <ul>
-                <li style="font-size:12px;">Led multiple projects.</li>
-                <li style="font-size:12px;">Issue resolution.</li>
-                <li style="font-size:12px;">Uploaded many apps on Google Play Store &amp; Apple App store.</li>
-                <li style="font-size:12px;">Client Satisfaction.</li>
-                <li style="font-size:12px;">Met deadlines.</li>
-                <li style="font-size:12px;">Bug free code.</li>
-              </ul>
+              <h1 class="margin-top-80"><b>Razzaq.com</b></h1>
+              <h4><b>Sr. Software Engineer - Android</b></h4>
+              <p><em>2023-2024 - Remote</em></p>
+    					<p class="mt-4">As a Senior Software Engineer – Android, I lead the development of scalable, high-performance mobile applications using Kotlin, Java, and modern Android frameworks. I architect and implement clean, maintainable code while optimizing app performance, security, and user experience.</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h1><b>elGrocer by Etisalat</b></h1>
+              <h4><b>Sr. Software Engineer - Android</b></h4>
+              <p><em>2023-2024 - Lahore, Pakistan (Hybrid)</em></p>
+    					<p class="mt-4">As a Senior Software Engineer – Android, I lead the development of scalable, high-performance mobile applications using Kotlin, Java, and modern Android frameworks. I architect and implement clean, maintainable code while optimizing app performance, security, and user experience.</p>
             </div>
 
             <div class="resume-item">
-              <h4>PHP Developer</h4>
-              <h5>2021 - Present</h5>
-              <p><b>Fiverr</b> &amp; <b>Upwork</b></p>
-              <ul>
-                <li style="font-size:12px;">Deployed many projects</li>
-                <li style="font-size:12px;">Updated the code of may Live projects</li>
-                <li style="font-size:12px;">Client Satisfaction.</li>
-                <li style="font-size:12px;">Met deadlines.</li>
-                <li style="font-size:12px;">Bug free code.</li>
-              </ul>
-            </div>
-          
+              <h1><b>Upwork & Fiverr</b></h1>
+              <h4><b>Sr. Mobile Application Developer (Android & Flutter)</b></h4>
+              <p><em>2024-2025 - Remote</em></p>
+    					<p class="mt-4">As a Senior Mobile Application Developer, I specialize in both Android and Flutter development. With expertise in Kotlin, Java, Dart, and modern frameworks, I design scalable, high-performance apps with a focus on delivering seamless cross-platform experiences.</p>
+            </div><!-- Edn Resume Item -->
+
           </div>
 
         </div>
 
       </div>
-    </section><!-- End Resume Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>I offer end-to-end mobile app development services, specializing in Android & Flutter to build high-performance, user-friendly, and scalable applications tailored to your business needs.</p>
+      </div><!-- End Section Title -->
+
       <div class="container">
 
-        <div class="section-title">
-          <h2>Portfolio</h2>
+        <div class="row gy-4">
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Native Apps (Android)</h3>
+              </a>
+              <p>I provide end-to-end Android app development services, handling everything from conceptualization and design to development and deployment, ensuring a comprehensive solution that meets your business requirements.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Hybrid Apps (Flutter)</h3>
+              </a>
+              <p>With expertise in Flutter, I create customized, high-quality cross-platform mobile (Android & IOS) applications that align with your specific needs, delivering visually captivating and seamless user experiences.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Backend (PHP)</h3>
+              </a>
+              <p>As an experienced PHP developer, I offer personalized backend development services, leveraging PHP's versatility to create tailored solutions that power your web applications with efficiency, reliability, and optimal performance.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>UI/UX (Adobe XD & Figma)</h3>
+              </a>
+              <p>I provide cutting-edge UI/UX design services, creating visually captivating and intuitive user interfaces that enhance user engagement, drive conversions, and deliver seamless user experiences across various platforms and devices.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
         </div>
 
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Android Apps</li>
-              <li data-filter=".filter-card">FLutter Apps</li>
-              <li data-filter=".filter-web">PHP Sites(Back-End)</li>
-            </ul>
-          </div>
-        </div>
+      </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+    </section><!-- /Services Section -->
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/android/android-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/android/android-1.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Text Art"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.tas.addtext.textonphoto" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+    <!-- Stats Section -->
+    <section id="stats" class="stats section accent-background">
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/android/android-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/android/android-6.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Sitch"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=co.sitchapp.sitch" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div> 
+      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/android/android-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/android/android-2.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Love Photo Frames"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.tas.ultimate.frames.editor" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/android/android-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/android/android-9.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Smart Data Transfer: Clone It"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.tas.smart.clone" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+        <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/android/android-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/android/android-3.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="File Manager"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.tas.file.manager" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="0" class="purecounter">100</span>
+              <p>Clients</p>
             </div>
-          </div>
+          </div><!-- End Stats Item -->
 
-          
-          <div class="col-lg-3 col-md-4 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/android/android-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/android/android-5.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Habitualizer - Habit Tracker"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.waleed.habitualize.public" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="0" class="purecounter">200</span>
+              <p>Projects</p>
             </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/android/android-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/android/android-4.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Unseen Status - No Last Read"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.tas.unseen.noseen" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+          </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-4 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/android/android-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/android/android-7.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Find Location & Phone Locator"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.fl.caller.number.locator" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="0" class="purecounter">24</span>
+              <p>Hours of Support</p>
             </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/android/android-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/android/android-8.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Blood Pressure Monitor BP Info"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.fl.bloodpressure.monitor" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/android/android-10.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/android/android-10.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="WA Recover Deleted Messages"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.thetamobile.recover.media.status.downloader" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/android/android-11.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/android/android-11.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Razzaq - Property Management"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.razzaq" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/flutter/flutter-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/flutter/flutter-1.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="mySizr"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.mysizer.app" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/flutter/flutter-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/flutter/flutter-2.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Challenge Upload"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.challenge.upload" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/flutter/flutter-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/flutter/flutter-3.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Me in Seconds"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.meinseconds" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/php/php-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/php/php-1.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Web App"><i class="bx bx-plus"></i></a>
-                <a href="https://aaimuniversity.com/" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/php/php-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/php/php-2.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Web App:"><i class="bx bx-plus"></i></a>
-                <a href="https://sandbox.re2qa.com/CLATitle/" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/php/php-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/php/php-3.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Web App:"><i class="bx bx-plus"></i></a>
-                <a href="https://rapidtechsolutionsllc.com/User/" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/php/php-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/php/php-4.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="AAIM2Connect"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.aaim.stuff&hl=en&gl=US" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/php/php-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/php/php-5.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Olathe Active App"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.featuregroupusa.olathepark" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/php/php-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/php/php-6.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Schaeffer Oil"><i class="bx bx-plus"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=featuregroup.schaefferoil" title="Open Link"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+          </div><!-- End Stats Item -->
 
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    </section><!-- /Stats Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Showcasing a collection of innovative and user-centric projects, highlighting my expertise in mobile app development and seamless user experiences.</p>
+      </div><!-- End Section Title -->
+
       <div class="container">
 
-        <div class="section-title">
-          <h2>Services</h2>
-        </div>
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><img src="assets/img/portfolio/icons/android-icon.jpg" class="img-fluid" alt=""></div>
-            <h4 class="title"><a href="">Native Apps (Android)</a></h4>
-            <p class="description">I provide end-to-end Android app development services, handling everything from conceptualization and design to development and deployment, ensuring a comprehensive solution that meets your business requirements.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><img src="assets/img/portfolio/icons/flutter-icon.jpg" class="img-fluid" alt=""></div>
-            <h4 class="title"><a href="">Hybrid Apps (Flutter)</a></h4>
-            <p class="description">With expertise in Flutter, I create customized, high-quality cross-platform mobile applications that align with your specific needs, delivering visually captivating and seamless user experiences.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><img src="assets/img/portfolio/icons/php-icon.jpg" class="img-fluid" alt=""></div>
-            <h4 class="title"><a href="">Backend (PHP)</a></h4>
-            <p class="description"> As an experienced PHP developer, I offer personalized backend development services, leveraging PHP's versatility to create tailored solutions that power your web applications with efficiency, reliability, and optimal performance.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><img src="assets/img/portfolio/icons/ui_ux_icon.jpg" class="img-fluid" alt=""></div>
-            <h4 class="title"><a href="">UI/UX (Adobe XD &amp; Figma)</a></h4>
-            <p class="description">I provide cutting-edge UI/UX design services, creating visually captivating and intuitive user interfaces that enhance user engagement, drive conversions, and deliver seamless user experiences across various platforms and devices.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><img src="assets/img/portfolio/icons/wordpress-icon.jpg" class="img-fluid" alt=""></div>
-            <h4 class="title"><a href="">WordPress Development</a></h4>
-            <p class="description">I specialize in developing customized WordPress websites, crafting unique themes and plugins that meet your specific requirements, ensuring a visually stunning and feature-rich online presence for your business or personal brand.</p>
-          </div>
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-android">Android</li>
+            <li data-filter=".filter-flutter">Flutter</li>
+            <li data-filter=".filter-laravel">Laravel</li>
+            <li data-filter=".filter-uiux">UI/Ux</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-flutter filter-laravel">
+              <img src="assets/img/portfolio/flutter-1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Smiles:Food,Grocery,Lifestyle</h4>
+                <p>1 Million + downloads</p>
+                <a href="assets/img/portfolio/flutter-1.png" title="Smiles:Food,Grocery,Lifestyle" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=ae.etisalat.smiles" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-flutter filter-laravel">
+              <img src="assets/img/portfolio/flutter-2.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>elGrocer Grocery Shopping App</h4>
+                <p>100 Thousand + downloads</p>
+                <a href="assets/img/portfolio/flutter-2.png" title="elGrocer Grocery Shopping App" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.el_grocer.shopper" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android filter-laravel">
+              <img src="assets/img/portfolio/android-1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Smart Data Transfer: Clone It</h4>
+                <p>1 Million + downloads</p>
+                <a href="assets/img/portfolio/android-1.png" title="Smart Data Transfer: Clone It" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.tas.smart.clone" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android filter-laravel">
+              <img src="assets/img/portfolio/android-2.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Perfect Body Editor for All</h4>
+                <p>100 Thousand + downloads</p>
+                <a href="assets/img/portfolio/android-2.png" title="Perfect Body Editor for All" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.las.body.shape.editor" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android filter-laravel">
+              <img src="assets/img/portfolio/android-3.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Step by Step Daily Namaz Guide</h4>
+                <p>100 Thousand + downloads</p>
+                <a href="assets/img/portfolio/android-3.png" title="Step by Step Daily Namaz Guide" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.ilib.stepbystepsalah" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android filter-laravel">
+              <img src="assets/img/portfolio/android-4.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Recover Deleted Text Messages</h4>
+                <p>100 Thousand + downloads</p>
+                <a href="assets/img/portfolio/android-4.png" title="Recover Deleted Text Messages" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.fl.recover.deleted.massages" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-flutter filter-laravel">
+              <img src="assets/img/portfolio/flutter-3.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Mobile Number Locator on Map</h4>
+                <p>1 Million + downloads</p>
+                <a href="assets/img/portfolio/flutter-3.png" title="Mobile Number Locator on Map" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.fl.caller.number.locator" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android filter-laravel">
+              <img src="assets/img/portfolio/android-6.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Photo PIP Camera Collage Maker</h4>
+                <p>1 Million + downloads</p>
+                <a href="assets/img/portfolio/android-6.png" title="Photo PIP Camera Collage Maker" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.las.pip.camera" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-uiux">
+              <img src="assets/img/portfolio/design-6.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>UI Design</h4>
+                <a href="assets/img/portfolio/design-6.png" title="Razzaq - Property Management" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android filter-laravel">
+              <img src="assets/img/portfolio/android-8.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Screen Mirroring TV - Miracast</h4>
+                <p>100 Thousand + downloads</p>
+                <a href="assets/img/portfolio/android-8.png" title="Screen Mirroring TV - Miracast" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.tas.tv.cast" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android filter-laravel">
+              <img src="assets/img/portfolio/android-7.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Photo Frame: Pic Collage Maker</h4>
+                <p>1 Million + downloads</p>
+                <a href="assets/img/portfolio/android-7.png" title="Photo Frame: Pic Collage Maker" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.tas.ultimate.frames.editor" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-flutter filter-laravel">
+              <img src="assets/img/portfolio/flutter-4.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Fabulous Daily Routine Planner</h4>
+                <p>10 Million + downloads</p>
+                <a href="assets/img/portfolio/flutter-4.png" title="Fabulous Daily Routine Planner" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=co.thefabulous.app" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android filter-laravel">
+              <img src="assets/img/portfolio/android-5.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Dual Photo Frame Collage Maker</h4>
+                <p>1 Million + downloads</p>
+                <a href="assets/img/portfolio/android-5.png" title="Dual Photo Frame Collage Maker" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.las.dual.photo.frames" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-uiux">
+              <img src="assets/img/portfolio/design-7.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>UI Design</h4>
+                <a href="assets/img/portfolio/design-7.png" title="Razzaq - Property Management" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android filter-laravel">
+              <img src="assets/img/portfolio/android-9.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Height Increase Workouts: Home</h4>
+                <p>1 Million + downloads</p>
+                <a href="assets/img/portfolio/android-9.png" title="Height Increase Workouts: Home" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.workoutapps.height.increase.workouts" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-uiux">
+              <img src="assets/img/portfolio/design-5.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>UI Design</h4>
+                <a href="assets/img/portfolio/design-5.png" title="Razzaq - Property Management" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android filter-laravel">
+              <img src="assets/img/portfolio/android-10.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Calculator - Gallery Vault</h4>
+                <p>100 Thousand + downloads</p>
+                <a href="assets/img/portfolio/android-10.png" title="Calculator - Gallery Vault" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.infinity_swipe.calculator_vault" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-uiux">
+              <img src="assets/img/portfolio/design-1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>UI Design</h4>
+                <a href="assets/img/portfolio/design-1.png" title="Razzaq - Property Management" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-uiux">
+              <img src="assets/img/portfolio/design-2.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>UI Design</h4>
+                <a href="assets/img/portfolio/design-2.png" title="Razzaq - Property Management" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android">
+              <img src="assets/img/portfolio/android-13.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Text to Photo: Picture Editor</h4>
+                <p>100 Thousand + downloads</p>
+                <a href="assets/img/portfolio/android-13.png" title="Text to Photo: Picture Editor" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.tas.addtext.textonphoto" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-flutter filter-laravel">
+              <img src="assets/img/portfolio/flutter-5.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ubuy: International Shopping</h4>
+                <p>1 Million + downloads</p>
+                <a href="assets/img/portfolio/flutter-5.png" title="Ubuy: International Shopping" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.ubuy" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-flutter filter-laravel">
+              <img src="assets/img/portfolio/flutter-6.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Razzaq - Property Management</h4>
+                <p>10 Thousand + downloads</p>
+                <a href="assets/img/portfolio/flutter-6.png" title="Razzaq - Property Management" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.razzaq" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-uiux">
+              <img src="assets/img/portfolio/design-3.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>UI Design</h4>
+                <a href="assets/img/portfolio/design-3.png" title="Razzaq - Property Management" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-uiux">
+              <img src="assets/img/portfolio/design-4.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>UI Design</h4>
+                <a href="assets/img/portfolio/design-4.png" title="Razzaq - Property Management" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android">
+              <img src="assets/img/portfolio/android-11.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Darkify Wallpapers</h4>
+                <p>100 Thousand + downloads</p>
+                <a href="assets/img/portfolio/android-11.png" title="Darkify Wallpapers" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.infinity_swipe.i_s.darkify" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android">
+              <img src="assets/img/portfolio/android-12.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>WA - Status Downloader</h4>
+                <p>100 Thousand + downloads</p>
+                <a href="assets/img/portfolio/android-12.png" title="WA - Status Downloader" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.infinity_swipe.statusdownloader" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            
+
+          </div><!-- End Portfolio Container -->
+
         </div>
 
       </div>
-    </section><!-- End Services Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
+    </section><!-- /Portfolio Section -->
 
-        <div class="section-title">
-          <h2>Reviews</h2>
-        </div>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section accent-background">
 
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/1.webp" class="testimonial-img" alt="">
+                <h3>Bob Sario</h3>
+                <h4>Fiverr Client</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
                 <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  waleed is a well diversed android app developer. He went above and beyond on the app development. I highly recommend him. I will continue to acquire his service on the app upgrades. job well done!
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Waleed is a well diverse android app developer. He went above and beyond on the app development. I highly recommend him. I will continue to acquire his service on the app upgrades. job well done!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>tootskie (5⭐)</h3>
-                <h4>Fiverr Client </h4>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/2.webp" class="testimonial-img" alt="">
+                <h3>Timo</h3>
+                <h4>Fiverr Client</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
                 <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Excellent and satisfying work! He is a good man you can trust him and he is doing what he promise.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Excellent and satisfying work! He is a good man you can trust him and he is doing what he promise.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Timo1992 (5⭐)</h3>
-                <h4>Fiver Client</h4>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/3.webp" class="testimonial-img" alt="">
+                <h3>John Elder</h3>
+                <h4>Fiverr Client</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
                 <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Awesome work delivered by Waleed... He has very good grip on android development. Work was beyond expectations and he went 2 steps further to meet the requirement. I will definitely hire him again. Highly recommended.....
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Awesome work delivered by Waleed... He has very good grip on android development. Work was beyond expectations and he went 2 steps further to meet the requirement. / will definitely hire him again. Highly recommended.....</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>abdulhere55 (5⭐)</h3>
-                <h4>Upwork Client</h4>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/4.webp" class="testimonial-img" alt="">
+                <h3>Rustom</h3>
+                <h4>Fiverr Client</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
                 <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Calm and intelligent seller.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Calm and intelligent seller, great experience to work with him.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>rustom101 (5⭐)</h3>
-                <h4>Upwork Client</h4>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/5.webp" class="testimonial-img" alt="">
+                <h3>Bella Larson</h3>
+                <h4>Fiverr Client</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
                 <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Great Experience as Always
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Great Experience as Always</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>mr_smm_ (5⭐)</h3>
-                <h4>Freelancer Client</h4>
               </div>
             </div><!-- End testimonial item -->
 
@@ -737,110 +715,104 @@
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
+    </section><!-- /Testimonials Section -->
 
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
 
-        <div class="row" data-aos="fade-in">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
 
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Lahore, Pakistan</p>
-              </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>waleedhassan4311@gmail.com</p>
-              </div>
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
 
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+92 323 5067742</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d850.6898525149435!2d74.34201763193802!3d31.475803798405476!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190427235b67ed%3A0x80c2ec5016353f7d!2sInformation%20Technology%20University%20(ITU)!5e0!3m2!1sen!2sus!4v1688506631762!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Lahore Pakistan</p>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
+            </div><!-- End Info Item -->
 
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Phone</h3>
+                  <p>+92 323 5067742</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>waleedhassan4311@gmail.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
 
-  </main><!-- End #main -->
+    </section><!-- /Contact Section -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="text-center">
+      <p><h5>Reach out to me through the links below for business inquiries and professional connections!</h5></p>
+    </div>
+
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.facebook.com/waleed.hassan.96995238"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/waleeed_hasssan/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/waleed-hassan-b211901bb/"><i class="bi bi-linkedin"></i></a>
+        <a href="https://join.skype.com/invite/VShBGhnApJ2Q"><img src="assets/img/social/1.svg"></i></a>
+        <a href="https://wa.me/923235067742?text=Hello"><img src="assets/img/social/2.svg"></i></a>
+        <a href="https://www.upwork.com/freelancers/~01db6ae7361e7f7552"><img src="assets/img/social/3.svg"></i></a>
+        <a href="https://www.fiverr.com/s/e6VmAK3"><img src="assets/img/social/4.svg"></i></a>
+        
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <div class="copyright text-center margin-top-40 ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
       </div>
     </div>
-  </footer><!-- End  Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
