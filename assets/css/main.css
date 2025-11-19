@@ -45,6 +45,11 @@
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
+
+/* text color change*/
+.text-color-P {
+  color: #477FBB !important;
+}
 .light-background {
   --background-color: #f9f9f9;
   --surface-color: #ffffff;
@@ -892,7 +897,10 @@ canvas#particles {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  text-align: start;
+  text-decoration-color: #477FBB;
+  
 }
 
 .resume .resume-item {
