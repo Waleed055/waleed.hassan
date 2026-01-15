@@ -1,0 +1,83 @@
+.mainPage {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* border: solid 2px yellow; */
+}
+
+.mainPage {
+  position: relative;
+}
+
+.mainPage canvas,
+.mainPage #tsparticles {
+  position: relative !important;
+  top: 0;
+  left: 0;
+  z-index: 1 !important;
+}
+
+
+.background {
+  height: 100vh;
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  /* border: solid 2px green;   */
+  padding-top: 90px !important;
+  /* navbar ki height */
+}
+
+.hero-container {
+  margin-top: 15%;
+  margin-left: 1%;
+  height: 50vh !important;
+  width: 67% !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .background {
+    flex-direction: column;
+    height: auto;
+    min-height: auto;
+    padding-bottom: 20px;
+    padding-top: 120px !important;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-container {
+    width: 90% !important;
+    margin: 0 auto 20px auto;
+    height: auto !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    width: 95% !important;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero-container {
+    width: 100% !important;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 0 15px;
+  }
+
+  .mainPage {
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .background {
+    padding-top: 80px !important;
+  }
+}
