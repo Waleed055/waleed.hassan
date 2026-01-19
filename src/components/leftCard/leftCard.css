@@ -1,0 +1,121 @@
+.left-card {
+  margin-top: 17px;
+
+  height: 70vh;
+  width: 30%;
+  /* max-width: 360px; */
+  background: #212121;
+  padding: 20px;
+  border-radius: 14px;
+  color: white;
+  text-align: left;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 0px solid transparent;
+}
+
+/* HOVER EFFECT */
+.left-card:hover {
+  transform: translateY(-10px);
+  /* Card upar jayega */
+  border-bottom: 10px solid #6D3D94;
+  /* Neeche gold color line */
+}
+
+.label {
+  height: 2vh;
+  color: #FFFFFF;
+  margin-top: 5px !important;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600;
+  font-style: bold;
+  font-size: 16px;
+  line-height: 2%;
+  letter-spacing: 0%;
+}
+
+.value {
+  margin-top: 5px !important;
+  height: 8vh;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20%;
+  letter-spacing: 0%;
+  color: #6D3D94;
+}
+
+
+
+
+/* LINKS FB INSTA LINKED */
+.socials {
+  margin-left: 50px;
+  margin-top: -32px;
+  width: 57%;
+  display: flex;
+  justify-content: center;
+  gap: 40px !important;
+  /* border: 2px solid red; */
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* ⭐ PURPLE GLOW EFFECT ON HOVER (#6D3D94) */
+.social-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 22px rgba(109, 61, 148, 0.4);
+}
+
+@media screen and (max-width: 1024px) {
+  .left-card {
+    width: 90%;
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .socials {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .value {
+    font-size: 16px;
+    height: auto;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left-card {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .left-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .label {
+    font-size: 14px;
+  }
+
+  .value {
+    font-size: 14px;
+  }
+
+  .socials {
+    gap: 20px !important;
+  }
+}
