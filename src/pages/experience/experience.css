@@ -1,0 +1,56 @@
+.experience-container {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  padding: 80px 20px;
+  background: #000000;
+  color: #fff;
+  position: relative;
+}
+
+.experience-container h2 {
+  font-style: italic;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.experience-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-row {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  /* needed for absolute positioning */
+}
+
+@media screen and (max-width: 1024px) {
+  .experience-container {
+    padding: 100px 20px 40px;
+  }
+
+  .experience-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experience-container {
+    padding: 80px 15px 40px;
+  }
+
+  .experience-container h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .experience-container {
+    padding: 60px 10px 30px;
+  }
+}

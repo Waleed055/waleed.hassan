@@ -1,0 +1,24 @@
+
+
+#tsparticles {
+  position: relative !important;
+  top: 0;
+  left: 0;
+  /* width: 100vw !important;
+  min-height: 100vh !important; */
+  z-index: 0 !important;   /* BACKGROUND */
+  pointer-events: none !important;
+
+
+ 
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+
+.container-fluid {
+  position: relative;
+  z-index: 1; /* Navbar & content above stars */
+}
