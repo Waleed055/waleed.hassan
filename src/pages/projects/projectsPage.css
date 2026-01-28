@@ -142,9 +142,27 @@
   }
 
   .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 0 15px 40px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px 30px 60px;
+    margin-left: 0;
+    width: 100%;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+  }
+
+  .projects-grid::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+  }
+
+  .card-animation-wrapper {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
   }
 }
 
@@ -169,6 +187,11 @@
   }
 
   .projects-grid {
-    padding: 0 10px 30px;
+    padding: 20px 20px 40px;
+    gap: 15px;
+  }
+
+  .card-animation-wrapper {
+    flex: 0 0 92%;
   }
 }

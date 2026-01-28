@@ -92,7 +92,7 @@
   font-weight: 700;
   font-size: 30px;
   margin: 0 0 2px 0 !important;
-  
+
 }
 
 .role {
@@ -110,7 +110,7 @@
   color: #fff;
   font-weight: 400;
   margin: 0 0 5px 0 !important;
-  margin-top: -40px!important;
+  margin-top: -40px !important;
 }
 
 .description {
@@ -121,7 +121,7 @@
   line-height: 1.4;
   letter-spacing: 0%;
   color: #fff;
-   margin-top: -40px!important;
+  margin-top: -40px !important;
 
 }
 
@@ -184,21 +184,44 @@
     font-size: 20px;
   }
 
-  .duration-location {
+  .duration-location,
+  .role,
+  .description {
     margin-top: 0 !important;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 440px) {
+  .experience-card {
+    text-align: center;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
   .company-name {
-    font-size: 18px;
+    font-size: 22px;
+    margin-bottom: 5px !important;
   }
 
   .role {
-    font-size: 14px;
+    font-size: 16px;
+    color: #cecece;
+    margin-top: 0 !important;
   }
 
   .description {
     font-size: 14px;
+    line-height: 1.6;
+    margin-top: 0 !important;
+    text-align: center;
+  }
+
+  .duration-location {
+    font-size: 14px;
+    margin-top: 0 !important;
+    font-style: italic;
   }
 }

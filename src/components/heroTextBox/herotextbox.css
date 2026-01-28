@@ -82,10 +82,16 @@
   font-size: 20px;
   border-radius: 8px;
   cursor: pointer;
-  width: 45%;
-  height: 20%;
+  width: auto;
+  min-width: 200px;
+  min-height: 50px;
+  height: auto;
   color: white;
   transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
   /* smooth hover */
 }
 
@@ -98,6 +104,10 @@
     0 0 55px rgba(109, 61, 148, 0.35);
   /* smooth extended glow */
   transform: translateY(-5px);
+}
+
+.resume-link {
+  text-decoration: none;
 }
 
 .download-icon {
@@ -164,10 +174,12 @@ p {
   }
 
   .resume-btn {
-    display: block;
+    display: flex;
     margin: 30px auto 0 auto;
-    width: 250px;
-    height: 50px;
+    width: fit-content;
+    min-width: 250px;
+    height: auto;
+    min-height: 50px;
   }
 }
 
@@ -221,11 +233,12 @@ p {
   }
 
   .resume-btn {
-    width: 200px;
+    width: fit-content;
+    min-width: 220px;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 440px) {
   .hero-box h1 {
     font-size: 32px;
   }
@@ -279,7 +292,7 @@ p {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 440px) {
   .hero-box h1 {
     font-size: 28px;
   }
@@ -290,7 +303,11 @@ p {
   }
 
   .resume-btn {
-    width: 100%;
+    width: 90%;
+    min-width: auto;
     font-size: 16px;
+    white-space: normal;
+    height: auto;
+    min-height: 50px;
   }
 }

@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 440px) {
   .profile-container {
     max-width: 300px;
   }

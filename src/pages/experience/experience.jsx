@@ -40,7 +40,7 @@ const experienceData = [
   },
   {
     company: "Upwork & Fiverr",
-    role: "Sr. Mobile Application Developer (Android & Flutter)",
+    role: "Sr. Mobile Application Developer",
     duration: "2021 - Present",
     location: "Remote",
     description: "Specialize in both Android and Flutter development. With expertise in Kotlin, Java, Dart, and modern frameworks, design scalable, high-performance apps with a focus on delivering seamless cross-platform experiences."

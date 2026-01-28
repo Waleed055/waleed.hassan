@@ -19,14 +19,14 @@ export default function HeroTextBox() {
   return (
     <div className="hero-box">
       <h1 className="hero-title">
-  <span className="hover-word">I</span>{" "}
-  <span className="hover-word">am</span>{" "}
-  <span className="hover-word">Waleed</span>{" "}
-  <span className="hover-word">Hassan,</span>{" "}
-  <span className="hover-word">Sr.</span>{" "}
-  <span className="hover-word">Software</span>{" "}
-  <span className="hover-word">Engineer</span>
-</h1>
+        <span className="hover-word">I</span>{" "}
+        <span className="hover-word">am</span>{" "}
+        <span className="hover-word">Waleed</span>{" "}
+        <span className="hover-word">Hassan,</span>{" "}
+        <span className="hover-word">Sr.</span>{" "}
+        <span className="hover-word">Software</span>{" "}
+        <span className="hover-word">Engineer</span>
+      </h1>
 
       <h3 className="static-text">
         <div className="roller">
@@ -39,23 +39,23 @@ export default function HeroTextBox() {
             <span className="highlight">Android</span>
             <span className="highlight">Flutter</span>
           </div>
-          
+
         </div>
         Development
-        
+
       </h3>
-<p>Mobile  Development  Specialist  |  Practical,  efficient,  and  focused  on  delivering  real-world  results</p>
-<a href="/Waleed-Android&Flutter.pdf" download="Waleed-Resume.pdf">
-      <button className="resume-btn">
-        <img
-          src={DownloadIcon}
-          alt="download icon"
-          className="download-icon"
-        />
-        Download Resume
-      </button>
-           </a>
-      
+      <p>Mobile  Development  Specialist  |  Practical,  efficient,  and  focused  on  delivering  real-world  results</p>
+      <a href="/Waleed-Android&Flutter.pdf" download="Waleed-Resume.pdf" className="resume-link">
+        <button className="resume-btn">
+          <img
+            src={DownloadIcon}
+            alt="download icon"
+            className="download-icon"
+          />
+          Download Resume
+        </button>
+      </a>
+
 
     </div>
   );
