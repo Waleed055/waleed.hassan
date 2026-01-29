@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/waleed.hassan/',
   build: {
-    outDir: 'docs',
+    outDir: 'dist',
   },
 })
