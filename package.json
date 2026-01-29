@@ -3,12 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://waleed055.github.io/Waleed.Hassan/",
+  "homepage": "https://waleed055.github.io/waleed.hassan/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
     "preview": "vite preview"
   },
   "dependencies": {
