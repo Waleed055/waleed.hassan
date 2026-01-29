@@ -3,14 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://waleed055.github.io/waleed.hassan/", 
+  "homepage": "https://waleed055.github.io/Waleed.Hassan/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",  
-    "deploy": "gh-pages -d dist"   
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tsparticles/engine": "^3.9.1",
