@@ -133,6 +133,62 @@ p {
   letter-spacing: 0%;
 }
 
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+  padding-left: 50px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  border: 1px solid rgba(109, 61, 148, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  background: rgba(109, 61, 148, 0.1);
+}
+
+.social-icon img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #6D3D94;
+  border-color: #6D3D94;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(109, 61, 148, 0.4);
+}
+
+.social-icon:hover img {
+  filter: brightness(0) invert(1) scale(1.1);
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-actions {
+    flex-direction: column;
+    padding-left: 0;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .resume-btn {
+    margin-left: 0;
+  }
+}
+
 
 
 

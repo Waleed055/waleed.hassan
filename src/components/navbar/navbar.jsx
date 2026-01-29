@@ -1,5 +1,5 @@
-// Navbar.jsx
 import { useState } from "react";
+import { motion } from "framer-motion";
 import "./navbar.css";
 import hamburgerIcon from "../../assets/images/hamburger.svg";
 
@@ -19,7 +19,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg">
+    <motion.nav
+      className="navbar navbar-expand-lg"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="container-fluid">
         {/* Logo */}
         <a className="navbar-brand" onClick={() => scrollToSection("home")}>

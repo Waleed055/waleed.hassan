@@ -76,7 +76,12 @@ button:focus-visible {
 }
 
 
-html, body {
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
   overflow-x: hidden !important;
   width: 100% !important;
 }

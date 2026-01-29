@@ -3,9 +3,7 @@
   width: 100vw;
   background-color: #000000;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: auto;
-  /* border: solid 2px yellow; */
+  /* overflow-x: hidden; */
 }
 
 .mainPage {
@@ -22,8 +20,8 @@
 
 
 .background {
-  height: 100vh;
-  width: 99%;
+  min-height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   /* border: solid 2px green;   */
