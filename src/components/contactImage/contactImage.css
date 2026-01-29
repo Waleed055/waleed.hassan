@@ -1,0 +1,20 @@
+.contact-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-image img {
+    margin-top: 0;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contact-image img {
+    max-width: 300px;
+  }
+}

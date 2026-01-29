@@ -1,0 +1,202 @@
+.project-header {
+  margin-top: 29px !important;
+  /* height: 4vh; */
+  display: inline-flex;
+  height: 20vh !important;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* ⭐ Only content width */
+  /* border: solid 2px blue; */
+
+
+}
+
+/* Heading — margins removed so width expand nahi karti */
+.project-heading {
+  color: #FFFFFF;
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+  margin-top: 88px !important;
+  /* ⭐ IMPORTANT FIX */
+}
+
+/* Icons */
+.project-icon {
+  position: relative;
+  margin-top: 88px;
+}
+
+.left-icon {
+  animation: leftMove 2s ease-in-out infinite;
+}
+
+@keyframes leftMove {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-550px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Right icon move */
+.right-icon {
+  animation: rightMove 2s ease-in-out infinite;
+}
+
+@keyframes rightMove {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(550px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  @keyframes leftMove {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(-200px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes rightMove {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(200px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-heading {
+    font-size: 20px;
+  }
+
+  @keyframes leftMove {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(-150px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes rightMove {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(150px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .project-heading {
+    font-size: 18px;
+  }
+
+  .project-header {
+    height: 10vh !important;
+  }
+
+  @keyframes leftMove {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(-100px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes rightMove {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(100px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  @keyframes leftMove {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(-50px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes rightMove {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(50px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+}

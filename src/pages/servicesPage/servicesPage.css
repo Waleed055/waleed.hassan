@@ -1,0 +1,52 @@
+.service {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  background: #000000;
+  color: #fff;
+  border-radius: 16px;
+  border: none;
+  padding: 80px 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.08);
+}
+
+.about-flex {
+  width: 100%;
+  height: auto;
+  min-height: 70vh;
+  justify-content: space-around;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .service {
+    padding: 100px 20px 40px 20px;
+  }
+
+  .about-flex {
+    flex-direction: column;
+    height: auto;
+    min-height: auto;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service {
+    padding: 80px 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .service {
+    padding: 60px 10px;
+  }
+}

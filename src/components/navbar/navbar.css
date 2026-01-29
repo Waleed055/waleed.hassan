@@ -1,0 +1,254 @@
+.navbar {
+  background-color: #000000;
+  min-height: 60px;
+  height: auto;
+  position: fixed !important;
+  top: 38px;
+  /* TOP GAP */
+  left: 40px;
+  /* LEFT GAP */
+  right: 40px;
+  /* RIGHT GAP */
+  width: auto;
+  /* FULL WIDTH ko break karega */
+  border-radius: 20px;
+  /* achi look aye gi */
+  z-index: 999999 !important;
+  /* box-shadow: 0px 0px 60px #6D3D94; */
+  box-shadow: 0 0 30px 4px #6D3D94;
+  /* box-shadow: 0 0 25px #6D3D94, 0 0 40px #6D3D94; */
+  /* box-shadow: 0 0 25px #6D3D94, 0 0 40px #6D3D94; */
+  /* box-shadow: 0 0 60px 20px rgba(109, 61, 148, 0.35); */
+  /* box-shadow: 0 0 60px 20px rgba(109, 61, 148, 0.35); */
+  /* box-shadow: inset 0 0 18px rgba(109, 61, 148, 0.7); */
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    left: 20px;
+    right: 20px;
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    outline: none !important;
+    box-shadow: none !important;
+    z-index: 10001;
+  }
+
+  .hamburger-svg-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-toggler.open .hamburger-svg-icon {
+    transform: rotate(90deg);
+  }
+
+
+
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.98);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .navbar-collapse.show {
+    opacity: 1;
+    visibility: visible;
+    display: flex !important;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px !important;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+  }
+
+  .navbar-collapse.show .nav-item {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Staggered animation for links */
+  .navbar-collapse.show .nav-item:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+
+  .navbar-collapse.show .nav-item:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+
+  .navbar-collapse.show .nav-item:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+
+  .navbar-collapse.show .nav-item:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+
+  .navbar-collapse.show .nav-item:nth-child(5) {
+    transition-delay: 0.5s;
+  }
+
+  .navbar-collapse.show .nav-item:nth-child(6) {
+    transition-delay: 0.6s;
+  }
+
+  .nav-link {
+    font-size: 24px !important;
+    padding: 15px 0;
+    color: #FFFFFF !important;
+    width: auto;
+    display: inline-block;
+  }
+
+  .navbar-brand {
+    z-index: 10001;
+    margin-right: auto !important;
+    margin-left: 0 !important;
+  }
+
+  .container-fluid {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 5px 20px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .navbar {
+    left: 10px;
+    right: 10px;
+    top: 10px;
+  }
+
+  .brand-P {
+    font-size: 30px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navbar {
+    left: 5px;
+    right: 5px;
+  }
+
+  .brand-P {
+    font-size: 28px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+  }
+}
+
+/* SIRF YEH CONTAINER-FLUID RAKHNI HAI */
+.container-fluid {
+  display: flex !important;
+  align-items: center !important;
+  padding: 5px 40px !important;
+}
+
+.nav-link {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #6D3D94;
+  /* Purple */
+  transition: color 0.3s ease;
+  /* Smooth color change */
+}
+
+.nav-link:hover {
+  color: #6D3D94 !important;
+  /* Slightly lighter/darker purple on hover */
+}
+
+
+.navbar-brand {
+  margin-left: 0;
+  padding-left: 0;
+  font-family: 'Italiana', serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0%;
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+/* Only the “P” */
+.brand-P {
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  /* Bold */
+  font-style: normal;
+  /* Not italic */
+  font-size: 50px;
+  /* As required */
+  line-height: 100%;
+  /* 1:1 */
+  letter-spacing: 0%;
+  /* No spacing */
+
+  color: #6D3D94;
+
+}
+
+/* “portfolio” */
+.brand-rest {
+  font-family: "Sansation", sans-serif;
+
+  color: #ffffff;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}

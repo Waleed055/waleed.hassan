@@ -1,0 +1,248 @@
+.hybrid {
+
+  position: relative;
+  width: 50%;
+  padding: 35px 30px;
+  margin-top: -30px;
+}
+
+/* Hover → Card background black */
+
+
+
+/* ---------------- ICON ---------------- */
+.hybrid-icon {
+  background: #ffffff;
+  width: 74px;
+  height: 74px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -70px;
+  margin-left: 35px;
+  transition: 0.4s ease;
+}
+
+/* Hover → icon box white (same rahega) */
+.hybrid:hover .hybrid-icon {
+  background: #6D3D94;
+}
+
+/* Icon normal */
+.hybrid-icon img {
+  width: 32px;
+  height: 32px;
+  transition: filter 0.4s ease;
+}
+
+/* Hover → Icon purple */
+.hybrid:hover .hybrid-icon img {
+  filter: brightness(0) invert(1);
+  /* Makes the icon white */
+}
+
+
+
+/* ---------------- HEADING ---------------- */
+.hybrid-heading {
+  margin-top: 45px !important;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  transition: 0.4s ease;
+}
+
+/* Hover → Purple heading */
+.hybrid:hover .hybrid-heading {
+  color: #6D3D94;
+}
+
+
+/* ---------------- DESCRIPTION ---------------- */
+.hybrid-description {
+  margin-left: 4px;
+  color: #d0d0d0;
+  font-size: 16px;
+  line-height: 1.8;
+  transition: 0.4s ease;
+  /* border: solid 2px pink; */
+  width: auto;
+  height: auto;
+}
+
+/* Hover → description white */
+.hybrid:hover .hybrid-description {
+  color: #fff;
+}
+
+
+.outer-line {
+  background: #1c1c1c;
+  padding: 40px 28px 28px 28px;
+  border-radius: 20px;
+  color: #fff;
+  width: 100%;
+  height: auto;
+  min-height: 45vh;
+  margin-top: 55px;
+  position: relative;
+  transition: 0.4s ease;
+}
+
+
+.outer-line:hover {
+  background: #000 !important;
+}
+
+/* ===== TOP FULL BORDER ===== */
+.outer-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  /* right:10%; */
+  height: 2px;
+  width: 90%;
+  background: #6D3D94;
+}
+
+/* ===== BOTTOM FULL BORDER ===== */
+.outer-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  height: 2px;
+  width: 90%;
+  background: #6D3D94;
+}
+
+/* ===== LEFT TOP SMALL BORDER ===== */
+.outer-line .lt {
+  content: "";
+  position: absolute;
+  left: 5%;
+  top: 0;
+  width: 2px;
+  height: 58px;
+  /* SAME as screenshot */
+  background: #6D3D94;
+}
+
+/* ===== RIGHT TOP SMALL BORDER ===== */
+.outer-line .rt {
+  content: "";
+  position: absolute;
+  right: 5%;
+  top: 0;
+  width: 2px;
+  height: 58px;
+  background: #6D3D94;
+}
+
+/* ===== LEFT BOTTOM SMALL BORDER (mirror of top) ===== */
+.outer-line .lb {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  width: 2px;
+  height: 55px;
+  background: #6D3D94;
+}
+
+/* ===== RIGHT BOTTOM SMALL BORDER (mirror of top) ===== */
+.outer-line .rb {
+  content: "";
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  width: 2px;
+  height: 55px;
+  background: #6D3D94;
+}
+
+/* Hide borders initially */
+.outer-line::before,
+.outer-line::after,
+.outer-line .lt,
+.outer-line .rt,
+.outer-line .lb,
+.outer-line .rb {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Show borders when hovering the card */
+.hybrid:hover .outer-line::before,
+.hybrid:hover .outer-line::after,
+.hybrid:hover .outer-line .lt,
+.hybrid:hover .outer-line .rt,
+.hybrid:hover .outer-line .lb,
+.hybrid:hover .outer-line .rb {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .hybrid {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .outer-line {
+    height: auto;
+    min-height: 350px;
+    padding: 20px;
+  }
+
+  .hybrid-heading {
+    font-size: 22px;
+  }
+
+  .hybrid-description {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hybrid {
+    width: 95%;
+  }
+
+  .hybrid-icon {
+    width: 60px;
+    height: 60px;
+    margin-top: -60px;
+  }
+
+  .hybrid-heading {
+    font-size: 20px;
+    margin-top: 30px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hybrid {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .hybrid-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hybrid-heading {
+    font-size: 18px;
+  }
+
+  .hybrid-icon {
+    width: 50px;
+    height: 50px;
+    margin-top: -55px;
+  }
+}

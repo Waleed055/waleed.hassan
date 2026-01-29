@@ -1,0 +1,313 @@
+.hero-box {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(1px);
+  padding: 40px 50px;
+  border-radius: 12px;
+  color: #FFFFFF;
+  width: 99%;
+  height: 55vh;
+  margin-left: 10px !important;
+  margin-top: -130px;
+  /* border: 2px solid pink; */
+}
+
+
+.hero-box h1 {
+  font-size: 42px;
+  font-weight: 700;
+  padding-left: 50px;
+
+}
+
+.static-text {
+  margin-left: -150px !important;
+  font-size: 36px;
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.roller {
+  height: 40px;
+  /* FIX: same height always */
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+
+/* FIX: remove any height change, keep both words same size */
+.inner-roll {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.9s ease-in-out;
+}
+
+.highlight {
+  color: #6D3D94;
+  height: 40px;
+  /* FIX: both items same height → NO BLANK SPACE */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 40px;
+  /* FIX: No extra space */
+}
+
+.hover-word {
+  transition: color 0.25s ease;
+  cursor: pointer;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.hover-word:hover {
+  color: #6D3D94;
+  /* hover color */
+}
+
+.resume-btn {
+  margin-left: 47px;
+  margin-top: -5px;
+  background: #6D3D94;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: auto;
+  min-width: 200px;
+  min-height: 50px;
+  height: auto;
+  color: white;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  /* smooth hover */
+}
+
+/* ⭐ GLOW ON HOVER */
+.resume-btn:hover {
+  box-shadow:
+    0 0 12px rgba(109, 61, 148, 0.9),
+    0 0 22px rgba(109, 61, 148, 0.7),
+    0 0 40px rgba(109, 61, 148, 0.45),
+    0 0 55px rgba(109, 61, 148, 0.35);
+  /* smooth extended glow */
+  transform: translateY(-5px);
+}
+
+.resume-link {
+  text-decoration: none;
+}
+
+.download-icon {
+  margin-top: -5px;
+  margin-right: 10px;
+  width: 17px;
+  height: 17px;
+}
+
+p {
+  margin-top: 32px !important;
+  margin-left: 50px;
+  /* border: 2px solid orange; */
+  width: 70%;
+  height: 72px;
+  color: #9A9A9A;
+  font-family: "Karma", serif;
+  font-weight: 400;
+  /* SemiBold */
+
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .hero-box {
+    margin-top: 0;
+    margin-left: 0 !important;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .hero-box h1 {
+    font-size: 48px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .static-text {
+    margin-left: 0 !important;
+    font-size: 32px;
+    justify-content: center;
+  }
+
+  .highlight,
+  .hover-word {
+    font-size: 32px;
+  }
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+    height: auto;
+    line-height: 1.4;
+  }
+
+  .resume-btn {
+    display: flex;
+    margin: 30px auto 0 auto;
+    width: fit-content;
+    min-width: 250px;
+    height: auto;
+    min-height: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-box {
+    padding: 20px;
+  }
+
+  .hero-box h1 {
+    font-size: 40px;
+  }
+
+  .static-text {
+    font-size: 28px;
+  }
+
+  .highlight,
+  .hover-word {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero-box h1 {
+    font-size: 36px;
+  }
+
+  .static-text {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .highlight,
+  .hover-word {
+    font-size: 24px;
+  }
+
+  .roller {
+    height: 32px;
+  }
+
+  .highlight {
+    height: 32px;
+    line-height: 32px;
+  }
+
+  .resume-btn {
+    width: fit-content;
+    min-width: 220px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .hero-box h1 {
+    font-size: 32px;
+  }
+
+  .static-text {
+    font-size: 22px;
+  }
+
+  .highlight,
+  .hover-word {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero-box h1 {
+    font-size: 28px;
+  }
+
+  .static-text {
+    font-size: 20px;
+  }
+
+  .highlight,
+  .hover-word {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero-box h1 {
+    font-size: 24px;
+  }
+
+  .static-text {
+    font-size: 18px;
+  }
+
+  .highlight,
+  .hover-word {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .hero-box h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-top: 20px !important;
+  }
+
+  .resume-btn {
+    width: 90%;
+    min-width: auto;
+    font-size: 16px;
+    white-space: normal;
+    height: auto;
+    min-height: 50px;
+  }
+}
