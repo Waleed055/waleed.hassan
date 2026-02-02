@@ -3,16 +3,17 @@
   min-height: 100vh;
   height: auto;
   background: #000000;
-  padding: 100px 4% 80px 4%;
+  padding: 0px 4% 80px 4%;
   text-align: center;
   position: relative;
   z-index: 2;
   box-sizing: border-box;
+
 }
 
 .about-flex {
-  min-height: 80vh;
-  height: auto;
+  min-height: 60vh;
+  /* height: auto; */
   display: flex;
   justify-content: center;
   /* Center cards more naturally */
@@ -32,7 +33,7 @@
 
 @media screen and (max-width: 1024px) {
   .about-container {
-    padding-top: 120px;
+    padding-top: 40px;
   }
 
   .about-flex {
@@ -47,7 +48,7 @@
 
 @media screen and (max-width: 768px) {
   .about-container {
-    padding-top: 100px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 }
@@ -64,6 +65,6 @@
 
 @media screen and (max-width: 320px) {
   .about-container {
-    padding-top: 60px;
+    padding-top: 30px;
   }
 }

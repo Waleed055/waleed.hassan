@@ -78,7 +78,7 @@ export default function HeroTextBox() {
           <div
             className="inner-roll"
             style={{
-              transform: `translateY(-${index * 40}px)`,
+              transform: `translateY(-${index * 44}px)`,
             }}
           >
             <span className="highlight">Android</span>
@@ -93,7 +93,7 @@ export default function HeroTextBox() {
       </motion.p>
 
       <motion.a
-        href="/Waleed-Resume.pdf"
+        href="./Waleed-Resume.pdf"
         download="Waleed-Resume.pdf"
         className="resume-link"
         variants={wordVariants}
@@ -106,7 +106,7 @@ export default function HeroTextBox() {
       </motion.a>
 
       <motion.div
-        className="socials"
+        className="social "
         variants={wordVariants}
       >
         {[
