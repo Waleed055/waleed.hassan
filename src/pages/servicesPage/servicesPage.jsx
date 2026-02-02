@@ -7,9 +7,9 @@ export default function Services() {
   return (
     <div className="service">
       <div className="apps">
-        <ServicesHeader/>
+        <ServicesHeader />
 
-        <div className="about-flex">
+        <div className="services-flex">
           <NativeAppCard />
           <HybridAppCard />
         </div>

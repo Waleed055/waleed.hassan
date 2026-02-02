@@ -1,13 +1,7 @@
 .mainPage {
-  min-height: 100vh;
-  width: 100vw;
+  width: 100%;
+  position: relative;
   background-color: #000000;
-  position: relative;
-  /* overflow-x: hidden; */
-}
-
-.mainPage {
-  position: relative;
 }
 
 .mainPage canvas,
@@ -18,22 +12,42 @@
   z-index: 1 !important;
 }
 
-
 .background {
   min-height: 100vh;
+  height: auto;
   width: 100%;
+  max-width: 1600px;
+  /* Centered container for large screens */
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  /* border: solid 2px green;   */
-  padding-top: 90px !important;
-  /* navbar ki height */
+  align-items: center;
+  /* Better vertical alignment */
+  padding: 120px 4% 80px 4% !important;
+  box-sizing: border-box;
 }
 
 .hero-container {
-  margin-top: 15%;
-  margin-left: 1%;
-  height: 50vh !important;
-  width: 67% !important;
+  /* margin-top: 15%; Removed for better flex centering */
+  height: auto !important;
+  width: 60% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Large Screens (1600px - 2000px) */
+@media screen and (min-width: 1600px) {
+  .background {
+    max-width: 1800px;
+    padding: 100px 5% !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hero-container {
+    width: 65% !important;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -41,30 +55,35 @@
     flex-direction: column;
     height: auto;
     min-height: auto;
-    padding-bottom: 20px;
-    padding-top: 120px !important;
+    padding-bottom: 40px;
+    padding-top: 140px !important;
     align-items: center;
     width: 100%;
+    max-width: 100%;
   }
 
   .hero-container {
     width: 90% !important;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 40px auto;
     height: auto !important;
+    text-align: center;
+    /* Center text on mobile/tablet */
   }
 }
 
 @media screen and (max-width: 768px) {
+  .background {
+    padding-top: 120px !important;
+  }
+
   .hero-container {
     width: 95% !important;
-    margin-top: 10px;
   }
 }
 
 @media screen and (max-width: 640px) {
   .hero-container {
     width: 100% !important;
-    margin-left: 0;
     margin-top: 20px;
     padding: 0 15px;
   }
@@ -76,6 +95,6 @@
 
 @media screen and (max-width: 425px) {
   .background {
-    padding-top: 80px !important;
+    padding-top: 100px !important;
   }
 }

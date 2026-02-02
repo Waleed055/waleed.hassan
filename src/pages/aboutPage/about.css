@@ -3,56 +3,58 @@
   min-height: 100vh;
   height: auto;
   background: #000000;
-  padding: 80px 20px;
+  padding: 100px 4% 80px 4%;
   text-align: center;
   position: relative;
   z-index: 2;
-  overflow: hidden;
+  box-sizing: border-box;
 }
 
-
-
 .about-flex {
-  height: 90vh;
+  min-height: 80vh;
+  height: auto;
   display: flex;
-  justify-content: space-between;
-  /* margin-left: -20px !important; */
+  justify-content: center;
+  /* Center cards more naturally */
+  gap: 80px;
+  /* Consistent gap between cards */
   flex-wrap: wrap;
-  max-height: 90vh;
-  max-width: 1350px;
-  margin-top: 1px !important;
-  margin: 0 auto;
-  /* overflow-x: hidden !important; */
-  /* border: chartreuse 2px solid; */
+  max-width: 1400px;
+  margin: 40px auto 0;
+}
 
-
+@media screen and (min-width: 1600px) {
+  .about-flex {
+    max-width: 1600px;
+    gap: 60px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .about-container {
-    padding-top: 100px;
+    padding-top: 120px;
   }
 
   .about-flex {
     height: auto;
-    max-height: none;
     flex-direction: column;
     align-items: center;
     gap: 40px;
     padding: 0 10px;
+    margin-top: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .about-container {
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 40px;
   }
 }
 
 @media screen and (max-width: 425px) {
   .about-container {
-    padding: 60px 10px;
+    padding: 80px 15px;
   }
 
   .about-flex {
@@ -62,6 +64,6 @@
 
 @media screen and (max-width: 320px) {
   .about-container {
-    padding-top: 50px;
+    padding-top: 60px;
   }
 }

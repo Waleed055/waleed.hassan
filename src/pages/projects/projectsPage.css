@@ -1,39 +1,42 @@
 .projects-page {
-  margin-top: 80px;
+  padding-top: 100px;
   width: 100%;
   background: #000000;
   color: #fff;
   text-align: center;
+  box-sizing: border-box;
 }
 
 /* Premium Filter Bar */
 .filter-bar {
   position: relative;
   display: flex;
-  gap: 10px;
-  margin-left: 80px;
+  gap: 15px;
+  margin: 30px auto;
   width: auto;
   max-width: fit-content;
-  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 15px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Buttons */
 .filter-bar button {
   font-size: 16px;
-  margin-left: 10px;
   background: none;
   border: none;
-  padding: 12px 15px;
-  color: #ccc;
+  padding: 10px 20px;
+  color: #aaa;
   cursor: pointer;
   font-weight: 500;
-  letter-spacing: .5px;
   transition: 0.3s ease;
+  position: relative;
+  z-index: 2;
 }
 
 .filter-bar button.active {
   color: #fff;
-  transform: scale(1.12);
 }
 
 /* SLIDING UNDERLINE */
@@ -87,12 +90,13 @@
 
 /* -------- GRID -------- */
 .projects-grid {
-  width: 95%;
+  width: 92%;
+  max-width: 1400px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  padding: 0 40px 60px;
-  margin-left: 30px;
+  gap: 30px;
+  padding: 40px 0 80px;
+  margin: 0 auto;
 }
 
 /* -------- CARD ENTRY ANIMATION -------- */
@@ -112,86 +116,78 @@
 
 
 
-@media screen and (max-width: 1440px) {
-  .filter-bar {
-    width: 30%;
+@media screen and (min-width: 1600px) {
+  .projects-grid {
+    max-width: 1600px;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 1024px) {
   .projects-page {
-    margin-top: 100px;
-  }
-
-  .filter-bar {
-    margin: 0 auto 30px auto;
-    justify-content: center;
+    padding-top: 120px;
   }
 
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 0;
-    width: 100%;
-    padding: 0 20px 40px;
+    width: 95%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .filter-bar {
-    gap: 5px;
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px 15px 60px;
   }
+}
 
+@media screen and (max-width: 640px) {
   .projects-grid {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 20px;
-    padding: 20px 30px 60px;
-    margin-left: 0;
+    padding: 20px 20px 60px;
     width: 100%;
     scrollbar-width: none;
-    /* Firefox */
     -ms-overflow-style: none;
-    /* IE/Edge */
   }
 
   .projects-grid::-webkit-scrollbar {
     display: none;
-    /* Chrome/Safari */
   }
 
-  .card-animation-wrapper {
+  .projects-grid>* {
     flex: 0 0 85%;
     scroll-snap-align: center;
   }
 }
 
-@media screen and (max-width: 640px) {
-  .filter-bar {
-    width: 100%;
-    overflow-x: auto;
-    justify-content: flex-start;
-    padding: 0 10px 10px;
-  }
-
-  .projects-page {
-    margin-top: 80px;
-  }
-}
 
 @media screen and (max-width: 425px) {
+  .projects-page {
+    padding-top: 80px;
+  }
+
+  .filter-bar {
+    width: 90%;
+    overflow-x: auto;
+    padding: 5px 10px;
+  }
+
   .filter-bar button {
     font-size: 14px;
-    padding: 8px 10px;
-    white-space: nowrap;
+    padding: 8px 15px;
   }
 
-  .projects-grid {
-    padding: 20px 20px 40px;
-    gap: 15px;
-  }
-
-  .card-animation-wrapper {
-    flex: 0 0 92%;
+  .projects-grid>* {
+    flex: 0 0 90%;
   }
 }

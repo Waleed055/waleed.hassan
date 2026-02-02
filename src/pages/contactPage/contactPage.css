@@ -1,38 +1,55 @@
 .contact-page {
   background: #000000;
   color: #fff;
-  height: 100vh;
+  min-height: auto;
   width: 100%;
-  /* border: 2px solid blue; */
+  padding-top: 100px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-section {
+  flex: 1;
   display: flex;
   justify-content: space-between;
-  padding: 80px;
-  max-width: 1400px;
+  align-items: center;
+  padding: 60px 1%;
+  max-width: 1500px;
+  /* Increased slightly to allow more spread */
   margin: 0 auto;
+  gap: 90px;
 }
 
+
 .left {
-  width: 40%;
+  width: 45%;
+  flex-shrink: 0;
 }
 
 .right {
-  width: 50%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1600px) {
+  .contact-section {
+    max-width: 1600px;
+    gap: 100px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .contact-page {
-    height: auto;
-    padding-bottom: 50px;
+    padding-top: 120px;
   }
 
   .contact-section {
     flex-direction: column-reverse;
-    padding: 100px 30px 40px;
+    padding: 20px 30px 60px;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
   }
 
   .left,
@@ -44,12 +61,17 @@
 
 @media screen and (max-width: 768px) {
   .contact-section {
-    padding: 80px 20px 40px;
+    padding: 0px 20px 60px;
   }
 }
 
 @media screen and (max-width: 425px) {
+  .contact-page {
+    padding-top: 80px;
+  }
+
   .contact-section {
-    padding: 60px 15px 30px;
+    padding: 0px 15px 40px;
+    gap: 40px;
   }
 }

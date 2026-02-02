@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import ExperienceCard from "../../components/ExperienceCard/experienceCard";
 import "./experience.css";
 
@@ -56,7 +57,15 @@ export default function Experience() {
 
   return (
     <div className="experience-container">
-      <h2 className="proessional-experience">Professional Experience</h2>
+      <motion.h2
+        className="proessional-experience"
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ type: "spring", stiffness: 60, damping: 15 }}
+      >
+        Professional Experience
+      </motion.h2>
       <div className="experience-grid">
         {rows.map((row, rowIndex) => (
           <div className="experience-row" key={rowIndex}>
@@ -73,3 +82,4 @@ export default function Experience() {
     </div>
   );
 }
+

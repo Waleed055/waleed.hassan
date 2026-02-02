@@ -1,14 +1,13 @@
+/* HYBRID CARD CSS */
 .hybrid {
-
   position: relative;
-  width: 50%;
+  flex: 1;
+  /* Fixes wrapping by sharing space */
+  min-width: 400px;
+  /* Ensures it doesn't get too small */
   padding: 35px 30px;
   margin-top: -30px;
 }
-
-/* Hover → Card background black */
-
-
 
 /* ---------------- ICON ---------------- */
 .hybrid-icon {
@@ -24,7 +23,7 @@
   transition: 0.4s ease;
 }
 
-/* Hover → icon box white (same rahega) */
+/* Hover → icon box white */
 .hybrid:hover .hybrid-icon {
   background: #6D3D94;
 }
@@ -39,10 +38,7 @@
 /* Hover → Icon purple */
 .hybrid:hover .hybrid-icon img {
   filter: brightness(0) invert(1);
-  /* Makes the icon white */
 }
-
-
 
 /* ---------------- HEADING ---------------- */
 .hybrid-heading {
@@ -59,7 +55,6 @@
   color: #6D3D94;
 }
 
-
 /* ---------------- DESCRIPTION ---------------- */
 .hybrid-description {
   margin-left: 4px;
@@ -67,7 +62,6 @@
   font-size: 16px;
   line-height: 1.8;
   transition: 0.4s ease;
-  /* border: solid 2px pink; */
   width: auto;
   height: auto;
 }
@@ -77,7 +71,7 @@
   color: #fff;
 }
 
-
+/* outerlines - RESTORED */
 .outer-line {
   background: #1c1c1c;
   padding: 40px 28px 28px 28px;
@@ -85,12 +79,12 @@
   color: #fff;
   width: 100%;
   height: auto;
-  min-height: 45vh;
+  min-height: 380px;
+  /* MATCHING NATIVE CARD */
   margin-top: 55px;
   position: relative;
   transition: 0.4s ease;
 }
-
 
 .outer-line:hover {
   background: #000 !important;
@@ -102,7 +96,6 @@
   position: absolute;
   top: 0;
   left: 5%;
-  /* right:10%; */
   height: 2px;
   width: 90%;
   background: #6D3D94;
@@ -127,7 +120,6 @@
   top: 0;
   width: 2px;
   height: 58px;
-  /* SAME as screenshot */
   background: #6D3D94;
 }
 
@@ -142,7 +134,7 @@
   background: #6D3D94;
 }
 
-/* ===== LEFT BOTTOM SMALL BORDER (mirror of top) ===== */
+/* ===== LEFT BOTTOM SMALL BORDER ===== */
 .outer-line .lb {
   content: "";
   position: absolute;
@@ -153,7 +145,7 @@
   background: #6D3D94;
 }
 
-/* ===== RIGHT BOTTOM SMALL BORDER (mirror of top) ===== */
+/* ===== RIGHT BOTTOM SMALL BORDER ===== */
 .outer-line .rb {
   content: "";
   position: absolute;
@@ -189,6 +181,7 @@
   .hybrid {
     width: 90%;
     margin-bottom: 20px;
+    flex: auto;
   }
 
   .outer-line {

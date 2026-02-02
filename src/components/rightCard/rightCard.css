@@ -2,9 +2,15 @@
 .right-card {
   margin-top: 15px;
   margin-right: 30px;
-  height: 72vh;
+  min-height: 70vh;
+  /* Match left card's 70vh (was 72vh) */
+  height: auto;
   width: 60%;
-
+  padding: 30px;
+  /* added inner padding for consistent spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   background: rgba(255, 255, 255, 0.08);
   border-radius: 18px;
@@ -12,15 +18,13 @@
   backdrop-filter: blur(10px);
   transition: all 0.35s ease;
   box-shadow: 0 0 12px rgba(109, 61, 148, 0.25);
-
-
 }
 
 .info {
-  margin-top: 10px!important;
-  width: 90%;
-  padding: 2px;
-
+  margin-top: 0 !important;
+  /* Managed by padding/flex */
+  width: 100%;
+  padding: 0;
 
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -35,8 +39,6 @@
 
   color: #ffffff;
   text-align: left;
-
-
 }
 
 /* HOVER: Purple Glow */
@@ -51,15 +53,17 @@
 /* QUOTE TEXT */
 .quote {
   text-align: left;
-  width: 90%;
-  margin-top: 266px !important;
+  width: 100%;
+  margin-top: 40px !important;
+  /* Reduced from 266px */
   font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-style: italic;
   font-weight: 600;
   color: #6D3D94;
   border-left: 5px solid #6D3D94;
-  margin-left: 30px;
+  margin-left: 0;
+  /* Align with text */
 
   padding: 10px 0 0 15px;
   /* border: 2px solid red; */

@@ -98,9 +98,17 @@
   }
 }
 
+
 @media screen and (max-width: 768px) {
   .about-heading {
     font-size: 20px;
+    margin-top: 0px !important;
+    /* Remove gap on mobile */
+  }
+
+  .about-icon {
+    margin-top: 0px;
+    /* Remove gap on mobile */
   }
 
   @keyframes leftMove {

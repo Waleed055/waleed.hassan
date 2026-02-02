@@ -4,29 +4,29 @@
   height: auto;
   position: fixed !important;
   top: 38px;
-  /* TOP GAP */
-  left: 40px;
-  /* LEFT GAP */
-  right: 40px;
-  /* RIGHT GAP */
-  width: auto;
-  /* FULL WIDTH ko break karega */
+  left: 50%;
+  /* Center the navbar */
+  transform: translateX(-50%);
+  width: calc(100% - 80px);
+  /* Subtract left/right gaps */
+  max-width: 1400px;
+  /* Constrain on ultra-wide screens */
   border-radius: 20px;
-  /* achi look aye gi */
   z-index: 999999 !important;
-  /* box-shadow: 0px 0px 60px #6D3D94; */
   box-shadow: 0 0 30px 4px #6D3D94;
-  /* box-shadow: 0 0 25px #6D3D94, 0 0 40px #6D3D94; */
-  /* box-shadow: 0 0 25px #6D3D94, 0 0 40px #6D3D94; */
-  /* box-shadow: 0 0 60px 20px rgba(109, 61, 148, 0.35); */
-  /* box-shadow: 0 0 60px 20px rgba(109, 61, 148, 0.35); */
-  /* box-shadow: inset 0 0 18px rgba(109, 61, 148, 0.7); */
 }
+
+@media screen and (min-width: 1600px) {
+  .navbar {
+    max-width: 1600px;
+    width: calc(100% - 120px);
+  }
+}
+
 
 @media screen and (max-width: 1024px) {
   .navbar {
-    left: 20px;
-    right: 20px;
+    width: calc(100% - 40px);
     top: 20px;
   }
 }
@@ -36,15 +36,13 @@
     border: none;
     padding: 0;
     width: 30px;
-    height: 20px;
-    position: relative;
+    height: 30px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     background: transparent;
     outline: none !important;
     box-shadow: none !important;
-    z-index: 10001;
   }
 
   .hamburger-svg-icon {
@@ -54,110 +52,65 @@
   }
 
   .navbar-toggler.open .hamburger-svg-icon {
-    transform: rotate(90deg);
+    transform: rotate(90deg) scale(0.8);
   }
 
-
-
-  .navbar-collapse {
+  /* SLEEK FLOATING DRAWER */
+  .navbar-mobile-drawer {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.98);
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    background: rgba(10, 10, 10, 0.98);
     backdrop-filter: blur(15px);
+    border: 1px solid rgba(109, 61, 148, 0.3);
+    border-radius: 24px;
+    padding: 90px 30px 40px;
+    z-index: 10000;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    z-index: 10000;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s ease;
-    border: none;
-    box-shadow: none;
+  }
+
+  .navbar-nav-mobile {
+    list-style: none;
     padding: 0;
-  }
-
-  .navbar-collapse.show {
-    opacity: 1;
-    visibility: visible;
-    display: flex !important;
-  }
-
-  .navbar-nav {
-    width: 100%;
+    margin: 0;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px !important;
+    gap: 25px;
+    width: 100%;
   }
 
-  .nav-item {
+  .nav-link-mobile {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 24px;
+    /* Elegant, not too large */
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: block;
     width: 100%;
     text-align: center;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.4s ease;
   }
 
-  .navbar-collapse.show .nav-item {
-    opacity: 1;
-    transform: translateY(0);
+  .nav-link-mobile:hover {
+    color: #6D3D94;
   }
 
-  /* Staggered animation for links */
-  .navbar-collapse.show .nav-item:nth-child(1) {
-    transition-delay: 0.1s;
-  }
-
-  .navbar-collapse.show .nav-item:nth-child(2) {
-    transition-delay: 0.2s;
-  }
-
-  .navbar-collapse.show .nav-item:nth-child(3) {
-    transition-delay: 0.3s;
-  }
-
-  .navbar-collapse.show .nav-item:nth-child(4) {
-    transition-delay: 0.4s;
-  }
-
-  .navbar-collapse.show .nav-item:nth-child(5) {
-    transition-delay: 0.5s;
-  }
-
-  .navbar-collapse.show .nav-item:nth-child(6) {
-    transition-delay: 0.6s;
-  }
-
-  .nav-link {
-    font-size: 24px !important;
-    padding: 15px 0;
-    color: #FFFFFF !important;
-    width: auto;
-    display: inline-block;
-  }
-
-  .navbar-brand {
-    z-index: 10001;
-    margin-right: auto !important;
-    margin-left: 0 !important;
-  }
-
-  .container-fluid {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    padding: 5px 20px !important;
+  .navbar-collapse {
+    display: none !important;
   }
 }
 
+
 @media screen and (max-width: 640px) {
   .navbar {
-    left: 10px;
-    right: 10px;
+    width: calc(100% - 20px);
     top: 10px;
   }
 
@@ -175,8 +128,7 @@
 
 @media screen and (max-width: 425px) {
   .navbar {
-    left: 5px;
-    right: 5px;
+    width: calc(100% - 10px);
   }
 
   .brand-P {

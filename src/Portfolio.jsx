@@ -9,7 +9,7 @@ import ContactPage from "./pages/contactPage/contactPage";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/waleed.hassan">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Navbar />
 
       <Routes>

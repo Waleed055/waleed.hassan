@@ -4,49 +4,53 @@
   width: 100%;
   background: #000000;
   color: #fff;
-  border-radius: 16px;
-  border: none;
-  padding: 80px 20px;
-  transition: 0.3s ease-in-out;
+  padding: 100px 4% 80px 4%;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.08);
-}
-
-.about-flex {
+.services-flex {
   width: 100%;
+  max-width: 1300px;
   height: auto;
-  min-height: 70vh;
-  justify-content: space-around;
-  margin-top: 20px;
+  min-height: 60vh;
+  justify-content: center;
+  gap: 60px;
+  margin: 40px auto 0;
   display: flex;
   flex-wrap: wrap;
 }
 
+@media screen and (min-width: 1600px) {
+  .services-flex {
+    max-width: 1500px;
+    gap: 80px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .service {
-    padding: 100px 20px 40px 20px;
+    padding: 120px 20px 60px 20px;
   }
 
-  .about-flex {
+  .services-flex {
     flex-direction: column;
     height: auto;
     min-height: auto;
     align-items: center;
     gap: 40px;
+    margin-top: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .service {
-    padding: 80px 15px;
+    padding: 100px 15px 40px;
   }
 }
 
 @media screen and (max-width: 425px) {
   .service {
-    padding: 60px 10px;
+    padding: 80px 10px 40px;
   }
 }

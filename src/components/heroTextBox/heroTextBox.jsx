@@ -1,11 +1,41 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import DownloadIcon from "../../assets/images/Resume-Icon.svg";
+import FbIcon from "../../assets/images/facebook.svg";
+import InstaIcon from "../../assets/images/insta.svg";
+import LinkedinIcon from "../../assets/images/LINKD.svg";
+import Githubicon from "../../assets/images/github.svg";
+
 import "./heroTextBox.css";
-import FacebookIcon from "../../assets/images/FBF.svg";
-import InstagramIcon from "../../assets/images/instagramF.svg";
-import LinkedInIcon from "../../assets/images/LinkekdinF.svg";
-import GithubIcon from "../../assets/images/githubF.svg";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.3
+    }
+  }
+};
+
+const wordVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 100, damping: 10 }
+  }
+};
+
+const floatingAnimation = {
+  y: [0, -10, 0],
+  transition: {
+    duration: 3,
+    repeat: Infinity,
+    ease: "easeInOut"
+  }
+};
 
 export default function HeroTextBox() {
   const [index, setIndex] = useState(0);
@@ -14,43 +44,41 @@ export default function HeroTextBox() {
     const timer = setInterval(() => {
       setIndex((prev) => (prev === 0 ? 1 : 0));
     }, 2500);
-
     return () => clearInterval(timer);
   }, []);
+
+  const titleWords = ["I", "am", "Waleed", "Hassan,", "Sr.", "Software", "Engineer"];
 
   return (
     <motion.div
       className="hero-box"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
     >
-      <motion.h1
-        className="hero-title"
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        <span className="hover-word">I</span>{" "}
-        <span className="hover-word">am</span>{" "}
-        <span className="hover-word">Waleed</span>{" "}
-        <span className="hover-word">Hassan,</span>{" "}
-        <span className="hover-word">Sr.</span>{" "}
-        <span className="hover-word">Software</span>{" "}
-        <span className="hover-word">Engineer</span>
+      <motion.h1 className="hero-title">
+        {titleWords.map((word, i) => (
+          <motion.span
+            key={i}
+            variants={wordVariants}
+            className="hover-word"
+            style={{ display: "inline-block", marginRight: "10px" }}
+            whileHover={{ scale: 1.1, color: "#6D3D94" }}
+          >
+            {word}
+          </motion.span>
+        ))}
       </motion.h1>
 
       <motion.h3
         className="static-text"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
+        variants={wordVariants}
       >
         <div className="roller">
           <div
             className="inner-roll"
             style={{
-              transform: `translateY(-${index * 40}px)`,  // ✅ FIXED
+              transform: `translateY(-${index * 40}px)`,
             }}
           >
             <span className="highlight">Android</span>
@@ -60,45 +88,47 @@ export default function HeroTextBox() {
         Development
       </motion.h3>
 
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.6 }}
-      >
+      <motion.p className="hero-desc" variants={wordVariants}>
         Mobile Development Specialist | Practical, efficient, and focused on delivering real-world results
       </motion.p>
 
-      <motion.div
-        className="hero-actions"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.8 }}
+      <motion.a
+        href="/Waleed-Resume.pdf"
+        download="Waleed-Resume.pdf"
+        className="resume-link"
+        variants={wordVariants}
+        animate={floatingAnimation}
       >
-        <a href="/Waleed-Android&Flutter.pdf" download="Waleed-Resume.pdf" className="resume-link">
-          <button className="resume-btn">
-            <img
-              src={DownloadIcon}
-              alt="download icon"
-              className="download-icon"
-            />
-            Download Resume
-          </button>
-        </a>
+        <button className="resume-btn">
+          <img src={DownloadIcon} alt="download icon" className="download-icon" />
+          Download Resume
+        </button>
+      </motion.a>
 
-        <div className="social-links">
-          <a href="https://www.facebook.com/share/12G6yV6B6p/" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <img src={FacebookIcon} alt="Facebook" />
-          </a>
-          <a href="https://www.instagram.com/waleedhassan_78?igsh=MXRzN3dkeHdjaXpneg==" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <img src={InstagramIcon} alt="Instagram" />
-          </a>
-          <a href="https://www.linkedin.com/in/waleed-hassan-90761a216?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <img src={LinkedInIcon} alt="LinkedIn" />
-          </a>
-          <a href="https://github.com/waleed055" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <img src={GithubIcon} alt="GitHub" />
-          </a>
-        </div>
+      <motion.div
+        className="socials"
+        variants={wordVariants}
+      >
+        {[
+          { href: "https://www.facebook.com/waleed.hassan.96995238", icon: FbIcon, alt: "facebook" },
+          { href: "https://www.instagram.com/waleeed_hasssan/", icon: InstaIcon, alt: "instagram" },
+          { href: "https://www.linkedin.com/in/waleed-hassan-b211901bb/", icon: LinkedinIcon, alt: "linkedin" },
+          { href: "https://github.com/Waleed055", icon: Githubicon, alt: "github" }
+        ].map((social, i) => (
+          <motion.a
+            key={i}
+            href={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ y: -5, scale: 1.2 }}
+            animate={{
+              y: [0, -5, 0],
+              transition: { duration: 2, delay: i * 0.2, repeat: Infinity, ease: "easeInOut" }
+            }}
+          >
+            <img src={social.icon} alt={social.alt} className="social-icon" />
+          </motion.a>
+        ))}
       </motion.div>
     </motion.div>
   );

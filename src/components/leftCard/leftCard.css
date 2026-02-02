@@ -1,7 +1,8 @@
 .left-card {
   margin-top: 17px;
 
-  height: 70vh;
+  min-height: 70vh;
+  height: auto;
   width: 30%;
   /* max-width: 360px; */
   background: #212121;
@@ -23,7 +24,8 @@
 }
 
 .label {
-  height: 2vh;
+  min-height: 2vh;
+  height: auto;
   color: #FFFFFF;
   margin-top: 5px !important;
   font-family: "Instrument Sans", sans-serif;
@@ -36,7 +38,8 @@
 
 .value {
   margin-top: 5px !important;
-  height: 8vh;
+  min-height: 8vh;
+  height: auto;
   font-family: "Instrument Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -51,7 +54,7 @@
 
 /* LINKS FB INSTA LINKED */
 .socials {
-  margin-left: 50px;
+  margin-left: 50px!important;
   margin-top: -32px;
   width: 57%;
   display: flex;

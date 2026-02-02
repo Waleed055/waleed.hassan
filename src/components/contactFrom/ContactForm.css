@@ -1,50 +1,63 @@
 .contact-form {
-  min-height: 40vh;
+  min-height: auto;
   margin-top: 20px !important;
+  text-align: left;
 }
 
+.contact-form h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
 
+.form-line {
+  margin-left: 0px;
+  color: #d0d0d0;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
 
 .display-box {
   display: flex;
-  height: 10vh;
-  width: 70%;
+  width: 100%;
+  max-width: 400px;
+  /* Limit width */
   align-items: center;
-  gap: 14px;
-  background: #222222;
-  padding: 14px 18px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  border: 1px solid #777777;
+  gap: 15px;
+  background: #1a1a1a;
+  /* Darker bg */
+  padding: 15px 20px;
+  border-radius: 8px;
+  /* Slightly more rounded */
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Subtle border */
   cursor: pointer;
   text-decoration: none !important;
-  /* 🔥 NEW BOX SHADOW */
   box-shadow: none;
   transition: 0.3s ease;
 }
 
 .display-box:hover {
-  /* Show glow only on hover */
-  box-shadow: 0 0 20px #6D3D94;
+  border-color: #6D3D94;
+  /* Purple border on hover */
   transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(109, 61, 148, 0.2);
 }
 
 .icon {
-  width: 10%;
-  height: 4vh;
-
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .display-box p {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 500;
   color: white;
-}
-
-
-.form-line {
-  margin-left: 0px;
-  color: white;
+  letter-spacing: 0.5px;
 }
 
 @media screen and (max-width: 1024px) {

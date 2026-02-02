@@ -1,8 +1,15 @@
+import { motion } from "framer-motion";
 import "./rightCard.css";
 
 export default function RightCard() {
   return (
-    <div className="right-card">
+    <motion.div
+      className="right-card"
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ type: "spring", stiffness: 50, damping: 15, delay: 0.2 }}
+    >
       <p className="info">
         I am a Senior Software Engineer specializing in Android and Flutter
         development, with a strong focus on creating high-quality, scalable,
@@ -20,6 +27,7 @@ export default function RightCard() {
         "If you are not going to tell the world who you are, the world is not
         going to tell you how good you are."
       </p>
-    </div>
+    </motion.div>
   );
 }
+

@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import ProjectsCard from "../../components/projectsCard/projectsCard";
 import { projectsData } from "./projectData";
 import "./projectsPage.css";
@@ -34,7 +35,13 @@ export default function Projects() {
     <div className="projects-page">
       <ProjectHeader />
 
-      <div className="filter-buttons">
+      <motion.div
+        className="filter-buttons"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2 }}
+      >
         <div className="filter-bar">
           <button ref={allRef}
             className={filter === "all" ? "active" : ""}
@@ -59,19 +66,19 @@ export default function Projects() {
 
           <span className="underline" ref={underlineRef}></span>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="projects-grid">
-        {filteredProjects.map((item, index) => (
-          <div
-            key={item.id}
-            className="card-animation-wrapper"
-            style={{ animationDelay: `${index * 0.12}s` }}
-          >
-            <ProjectsCard {...item} />
-          </div>
-        ))}
-      </div>
+      <motion.div
+        layout
+        className="projects-grid"
+      >
+        <AnimatePresence mode="popLayout">
+          {filteredProjects.map((item) => (
+            <ProjectsCard key={item.id} {...item} />
+          ))}
+        </AnimatePresence>
+      </motion.div>
     </div>
   );
 }
+

@@ -13,7 +13,7 @@ export default function ContactForm() {
       <p className="form-line ">Let’s build something together :)</p>
 
       {/* PHONE CLICK → MOBILE DIALER OPEN */}
-      <a href="tel:+923001234567" className="display-box mt">
+      <a href="tel:+923235067742" className="display-box mt">
         <img src={phoneIcon} alt="phone" className="icon" />
         <p>+92 323 5067742</p>
       </a>
@@ -24,7 +24,7 @@ export default function ContactForm() {
         <p>waleedhassan4311@gmail.com</p>
       </a>
 
-     
+
     </div>
   );
 }

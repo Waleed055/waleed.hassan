@@ -1,43 +1,40 @@
 .hero-box {
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(1px);
-  padding: 40px 50px;
+  padding: 40px 4%;
+  /* Symmetrical padding */
   border-radius: 12px;
   color: #FFFFFF;
-  width: 99%;
-  height: 55vh;
-  margin-left: 10px !important;
-  margin-top: -130px;
-  /* border: 2px solid pink; */
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
 .hero-box h1 {
-  font-size: 42px;
+  font-size: 52px;
   font-weight: 700;
-  padding-left: 50px;
-
+  line-height: 1.2;
 }
 
 .static-text {
-  margin-left: -150px !important;
-  font-size: 36px;
-  margin-top: 40px;
-  text-align: center;
+  font-size: 38px;
+  margin-top: 25px;
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
 }
 
 .roller {
-  height: 40px;
-  /* FIX: same height always */
+  height: 44px;
   overflow: hidden;
   display: inline-block;
   position: relative;
 }
 
-/* FIX: remove any height change, keep both words same size */
 .inner-roll {
   display: flex;
   flex-direction: column;
@@ -46,13 +43,11 @@
 
 .highlight {
   color: #6D3D94;
-  height: 40px;
-  /* FIX: both items same height → NO BLANK SPACE */
+  height: 44px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  line-height: 40px;
-  /* FIX: No extra space */
+  justify-content: flex-start;
+  line-height: 44px;
 }
 
 .hover-word {
@@ -60,310 +55,177 @@
   cursor: pointer;
   font-family: "Instrument Sans", sans-serif;
   font-weight: 700;
-  font-style: normal;
-  font-size: 36px;
+  font-size: 38px;
   line-height: 100%;
-  letter-spacing: 0%;
 }
 
 .hover-word:hover {
   color: #6D3D94;
-  /* hover color */
+}
+
+p.hero-desc {
+  margin-top: 25px !important;
+  margin-left: 0;
+  width: 90%;
+  max-width: 650px;
+  color: #9A9A9A;
+  font-family: "Karma", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 .resume-btn {
-  margin-left: 47px;
-  margin-top: -5px;
+  margin-top: 30px;
   background: #6D3D94;
   border: none;
-  padding: 10px 20px;
-  font-weight: 400;
+  padding: 14px 28px;
+  font-weight: 500;
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 8px;
   cursor: pointer;
-  width: auto;
-  min-width: 200px;
-  min-height: 50px;
-  height: auto;
+  width: fit-content;
   color: white;
   transition: 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  white-space: nowrap;
-  /* smooth hover */
 }
 
-/* ⭐ GLOW ON HOVER */
 .resume-btn:hover {
-  box-shadow:
-    0 0 12px rgba(109, 61, 148, 0.9),
-    0 0 22px rgba(109, 61, 148, 0.7),
-    0 0 40px rgba(109, 61, 148, 0.45),
-    0 0 55px rgba(109, 61, 148, 0.35);
-  /* smooth extended glow */
-  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(109, 61, 148, 0.6);
+  transform: translateY(-3px);
 }
 
-.resume-link {
-  text-decoration: none;
-}
-
-.download-icon {
-  margin-top: -5px;
-  margin-right: 10px;
-  width: 17px;
-  height: 17px;
-}
-
-p {
-  margin-top: 32px !important;
-  margin-left: 50px;
-  /* border: 2px solid orange; */
-  width: 70%;
-  height: 72px;
-  color: #9A9A9A;
-  font-family: "Karma", serif;
-  font-weight: 400;
-  /* SemiBold */
-
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
-}
-
-.hero-actions {
+.socials {
+  margin-top: 40px !important;
   display: flex;
-  align-items: center;
+  justify-content: flex-start !important;
   gap: 30px;
-  margin-top: 40px;
-  padding-left: 50px;
-}
-
-.social-links {
-  display: flex;
-  gap: 15px;
 }
 
 .social-icon {
-  width: 45px;
-  height: 45px;
-  border: 1px solid rgba(109, 61, 148, 0.5);
+  width: 26px;
+  height: 26px;
+  transition: 0.3s ease;
+  cursor: pointer;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  background: rgba(109, 61, 148, 0.1);
-}
-
-.social-icon img {
-  width: 20px;
-  height: 20px;
-  filter: brightness(0) invert(1);
-  transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-  background: #6D3D94;
-  border-color: #6D3D94;
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(109, 61, 148, 0.4);
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(109, 61, 148, 0.5);
 }
 
-.social-icon:hover img {
-  filter: brightness(0) invert(1) scale(1.1);
-}
-
-@media screen and (max-width: 1024px) {
-  .hero-actions {
-    flex-direction: column;
-    padding-left: 0;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .resume-btn {
-    margin-left: 0;
-  }
-}
-
-
-
-
-@media screen and (max-width: 1024px) {
-  .hero-box {
-    margin-top: 0;
-    margin-left: 0 !important;
-    width: 100%;
-    height: auto;
-    padding: 30px;
-    background: rgba(0, 0, 0, 0.6);
-  }
-
+/* Large Screens (1600px+) */
+@media screen and (min-width: 1600px) {
   .hero-box h1 {
-    font-size: 48px;
-    padding-left: 0;
-    text-align: center;
+    font-size: 64px;
   }
 
-  .static-text {
-    margin-left: 0 !important;
-    font-size: 32px;
-    justify-content: center;
-  }
-
-  .highlight,
+  .static-text,
   .hover-word {
-    font-size: 32px;
+    font-size: 46px;
   }
 
-  p {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    text-align: center;
-    font-size: 18px;
-    height: auto;
-    line-height: 1.4;
-  }
-
-  .resume-btn {
-    display: flex;
-    margin: 30px auto 0 auto;
-    width: fit-content;
-    min-width: 250px;
-    height: auto;
-    min-height: 50px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero-box {
-    padding: 20px;
-  }
-
-  .hero-box h1 {
-    font-size: 40px;
-  }
-
-  .static-text {
-    font-size: 28px;
-  }
-
-  .highlight,
-  .hover-word {
-    font-size: 28px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .hero-box h1 {
-    font-size: 36px;
-  }
-
-  .static-text {
-    flex-direction: column;
-    gap: 5px;
-    margin-top: 20px;
-    font-size: 24px;
-  }
-
-  .highlight,
-  .hover-word {
-    font-size: 24px;
-  }
-
-  .roller {
-    height: 32px;
-  }
-
+  .roller,
   .highlight {
-    height: 32px;
-    line-height: 32px;
+    height: 52px;
+    line-height: 52px;
   }
 
-  .resume-btn {
-    width: fit-content;
-    min-width: 220px;
+  p.hero-desc {
+    font-size: 24px;
+    max-width: 800px;
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 1200px) {
   .hero-box h1 {
-    font-size: 32px;
+    font-size: 46px;
+  }
+
+  .static-text,
+  .hover-word {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-box {
+    padding: 30px 4% !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-left: 0 !important;
+  }
+
+  .hero-box h1 {
+    font-size: 44px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .static-text {
-    font-size: 22px;
-  }
-
-  .highlight,
-  .hover-word {
-    font-size: 22px;
-  }
-
-  p {
-    font-size: 15px;
+    justify-content: center !important;
+    font-size: 32px;
     width: 100%;
   }
-}
 
-@media screen and (max-width: 375px) {
-  .hero-box h1 {
-    font-size: 28px;
+  p.hero-desc {
+    margin: 20px auto !important;
+    font-size: 17px;
+    width: 100%;
+    max-width: 90%;
   }
 
-  .static-text {
-    font-size: 20px;
-  }
-
-  .highlight,
-  .hover-word {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .hero-box h1 {
-    font-size: 24px;
-  }
-
-  .static-text {
-    font-size: 18px;
-  }
-
-  .highlight,
-  .hover-word {
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .hero-box h1 {
-    font-size: 28px;
-  }
-
-  p {
-    font-size: 14px;
-    margin-top: 20px !important;
+  .resume-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .resume-btn {
-    width: 90%;
-    min-width: auto;
+    margin: 25px auto 0 !important;
+    width: auto !important;
+    min-width: 180px;
+    padding: 10px 20px;
     font-size: 16px;
-    white-space: normal;
-    height: auto;
-    min-height: 50px;
+  }
+
+  .socials {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 35px auto 0 !important;
+    width: 100% !important;
+    gap: 25px !important;
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-box h1 {
+    font-size: 28px;
+  }
+
+  p.hero-desc {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .resume-btn {
+    min-width: 160px;
+    padding: 8px 20px;
+    font-size: 15px;
+  }
+
+  .socials {
+    gap: 20px !important;
+  }
+
+  .social-icon {
+    width: 22px;
+    height: 22px;
   }
 }

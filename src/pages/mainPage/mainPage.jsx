@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useVelocity, useTransform, useSpring } from "framer-motion";
+import { useRef } from "react";
 import "./mainPage.css";
 import HeroTextBox from "../../components/heroTextBox/heroTextBox.jsx";
 import AboutSection from "../aboutPage/about.jsx";
@@ -8,32 +9,60 @@ import Services from "../servicesPage/servicesPage.jsx"
 import Projects from "../projects/projectsPage.jsx";
 import ContactPage from "../contactPage/contactPage.jsx";
 
+const sectionVariants = {
+  hidden: {
+    opacity: 0,
+    y: 0, // FIXED: Set y to 0 to prevent the reload 'jump'
+    scale: 0.98,
+    filter: "blur(8px)"
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    filter: "blur(0px)",
+    transition: {
+      type: "spring",
+      stiffness: 40,
+      damping: 20,
+      duration: 1.5
+    }
+  }
+};
+
 
 export default function MainPage() {
-  const sectionVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: "easeOut" }
-    }
-  };
+  const containerRef = useRef(null);
+  const { scrollY } = useScroll();
+  const scrollVelocity = useVelocity(scrollY);
+
+  // Create a smooth skew effect based on scroll velocity
+  const skewVelocity = useTransform(scrollVelocity, [-2000, 2000], [-5, 5]);
+  const skew = useSpring(skewVelocity, { stiffness: 100, damping: 30 });
 
   return (
-    <div className="mainPage">
+    <motion.div
+      ref={containerRef}
+      className="mainPage"
+      style={{
+        skewY: skew,
+        transformOrigin: "center",
+        transition: "skewY 0.1s ease-out"
+      }}
+    >
       {/* HOME SECTION */}
-      <div id="home" className="background">
+      <motion.div
+        id="home"
+        className="background"
+        initial="hidden"
+        animate="visible"
+        variants={sectionVariants}
+      >
         <div className="hero-container">
           <HeroTextBox />
         </div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <Profile />
-        </motion.div>
-      </div>
+        <Profile />
+      </motion.div>
 
       {/* ABOUT SECTION */}
       <motion.section
@@ -62,12 +91,13 @@ export default function MainPage() {
         id="services"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.15 }}
         variants={sectionVariants}
       >
         <Services />
       </motion.section>
 
+      {/* PROJECTS SECTION */}
       <motion.section
         id="projects"
         initial="hidden"
@@ -78,15 +108,18 @@ export default function MainPage() {
         <Projects />
       </motion.section>
 
+      {/* CONTACT SECTION */}
       <motion.section
         id="contact"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.1 }}
         variants={sectionVariants}
       >
         <ContactPage />
       </motion.section>
-    </div>
+
+    </motion.div>
   );
 }
+

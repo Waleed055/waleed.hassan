@@ -1,16 +1,13 @@
 /* MAIN CARD */
 .native {
   position: relative;
-  width: 50%;
+  flex: 1;
+  /* Fixes the wrapping issue by sharing space */
+  min-width: 400px;
+  /* Ensures it doesn't get too small */
   padding: 35px 30px;
-
   margin-top: -30px;
-
 }
-
-/* HOVER EFFECT ON CARD */
-
-
 
 /* ---------------- ICON ---------------- */
 .native-icon {
@@ -41,10 +38,7 @@
 /* SVG purple banane ke liye filter */
 .native:hover .native-icon img {
   filter: brightness(0) invert(1);
-  /* Makes the icon white */
 }
-
-
 
 /* ---------------- HEADING ---------------- */
 .native-heading {
@@ -59,10 +53,7 @@
 /* Hover → Purple heading */
 .native:hover .native-heading {
   color: #a855f7;
-  /* nice purple shade */
 }
-
-
 
 /* ---------------- DESCRIPTION ---------------- */
 .native-description {
@@ -71,7 +62,6 @@
   font-size: 16px;
   line-height: 1.8;
   transition: 0.4s ease;
-  /* border: solid 2px pink; */
   width: auto;
   height: auto;
 }
@@ -81,10 +71,7 @@
   color: #fff;
 }
 
-
-
-
-/* outerlines */
+/* outerlines - RESTORED */
 .outer-line {
   background: #1c1c1c;
   padding: 40px 28px 28px 28px;
@@ -92,7 +79,7 @@
   color: #fff;
   width: 100%;
   height: auto;
-  min-height: 45vh;
+  min-height: 380px;
   margin-top: 55px;
   position: relative;
   transition: 0.4s ease;
@@ -108,7 +95,6 @@
   position: absolute;
   top: 0;
   left: 5%;
-  /* right:10%; */
   height: 2px;
   width: 90%;
   background: #6D3D94;
@@ -133,7 +119,6 @@
   top: 0;
   width: 2px;
   height: 58px;
-  /* SAME as screenshot */
   background: #6D3D94;
 }
 
@@ -148,7 +133,7 @@
   background: #6D3D94;
 }
 
-/* ===== LEFT BOTTOM SMALL BORDER (mirror of top) ===== */
+/* ===== LEFT BOTTOM SMALL BORDER ===== */
 .outer-line .lb {
   content: "";
   position: absolute;
@@ -159,7 +144,7 @@
   background: #6D3D94;
 }
 
-/* ===== RIGHT BOTTOM SMALL BORDER (mirror of top) ===== */
+/* ===== RIGHT BOTTOM SMALL BORDER ===== */
 .outer-line .rb {
   content: "";
   position: absolute;
@@ -195,6 +180,8 @@
   .native {
     width: 90%;
     margin-bottom: 20px;
+    flex: auto;
+    /* Reset flex */
   }
 
   .outer-line {

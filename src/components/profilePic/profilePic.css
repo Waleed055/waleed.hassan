@@ -1,21 +1,27 @@
 .profile-container {
-  margin-top: 120px;
-  width: 58%;
-  height: 83%;
+  margin-top: 80px;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
   perspective: 1200px;
-  /* IMPORTANT for 3D rotate */
-  /* border: solid 2px blue; */
+  margin-right: 2%;
 }
 
 .profile-pic {
-  width: 99%;
-  height: 99%;
+  width: 90%;
+  max-width: 550px;
+  height: auto;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   transition: transform 0.1s linear;
   transform-style: preserve-3d;
+}
+
+@media screen and (min-width: 1600px) {
+  .profile-pic {
+    max-width: 650px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -23,40 +29,37 @@
     width: 100%;
     max-width: 450px;
     height: auto;
-    margin: 20px auto 0 auto;
+    margin: 40px auto 0 auto;
     padding-bottom: 20px;
-    perspective: 1500px;
   }
 
   .profile-pic {
-    width: 90%;
+    width: 85%;
     max-width: 400px;
-    height: auto;
-    aspect-ratio: 1/1;
   }
 }
 
 @media screen and (max-width: 768px) {
   .profile-container {
     max-width: 350px;
-    margin-top: 0px;
+    margin-top: 20px;
   }
 }
 
 @media screen and (max-width: 440px) {
   .profile-container {
-    max-width: 300px;
+    max-width: 320px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .profile-container {
-    max-width: 250px;
+    max-width: 280px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .profile-container {
-    max-width: 200px;
+    max-width: 240px;
   }
 }
