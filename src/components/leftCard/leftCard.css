@@ -2,8 +2,8 @@
   margin-top: 17px;
 
   height: auto !important;
-  min-height: 380px;
-  /* Reduced from 450px to make it more compact */
+  min-height: unset !important;
+  /* Removed min-height to eliminate bottom gap */
   width: 30%;
   /* max-width: 360px; */
   background: #212121;
