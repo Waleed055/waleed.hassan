@@ -1,8 +1,9 @@
 .left-card {
   margin-top: 17px;
 
-  height: 70vh !important;
-  /* height: auto; */
+  height: auto !important;
+  min-height: 380px;
+  /* Reduced from 450px to make it more compact */
   width: 30%;
   /* max-width: 360px; */
   background: #212121;
@@ -24,27 +25,27 @@
 }
 
 .label {
-  min-height: 2vh;
+  min-height: auto;
   height: auto;
   color: #FFFFFF;
-  margin-top: 5px !important;
+  margin-top: 15px !important;
   font-family: "Instrument Sans", sans-serif;
   font-weight: 600;
   font-style: bold;
   font-size: 16px;
-  line-height: 2%;
+  line-height: 1.2;
   letter-spacing: 0%;
 }
 
 .value {
   margin-top: 5px !important;
-  min-height: 8vh;
+  min-height: auto;
   height: auto;
   font-family: "Instrument Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 18px;
-  line-height: 20%;
+  line-height: 1.2;
   letter-spacing: 0%;
   color: #6D3D94;
 }
