@@ -2,8 +2,10 @@
   margin-top: 17px;
 
   height: auto !important;
-  min-height: unset !important;
-  /* Removed min-height to eliminate bottom gap */
+  min-height: 420px;
+  /* Added a stable min-height so it doesn't look cramped */
+  padding-bottom: 40px;
+  /* Added padding at the bottom for breathing room */
   width: 30%;
   /* max-width: 360px; */
   background: #212121;
@@ -33,7 +35,7 @@
   font-weight: 600;
   font-style: bold;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 0%;
 }
 
@@ -45,7 +47,7 @@
   font-weight: 600;
   font-style: normal;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 0%;
   color: #6D3D94;
 }
@@ -55,9 +57,9 @@
 
 /* LINKS FB INSTA LINKED */
 .socials {
-  margin-left: 20px !important;
-  margin-top: -25px;
-  width: 57%;
+  margin-left: 0 !important;
+  margin-top: 30px;
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 40px !important;

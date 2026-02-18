@@ -3,8 +3,9 @@
   margin-top: 15px;
   margin-right: 30px;
   height: auto;
-  min-height: unset;
-  /* Removed min-height to eliminate bottom gap */
+  min-height: 420px;
+  /* Balanced with Left Card for symmetry */
+  padding-bottom: 40px;
 
   width: 60%;
   padding: 30px;
