@@ -75,10 +75,11 @@
 
 @media screen and (max-width: 1024px) {
   .right-card {
-    width: 90%;
+    width: 80%;
+    /* Match Left Card width */
     height: auto;
     margin-right: 0;
-    padding: 20px;
+    padding: 30px 30px 40px 30px;
   }
 
   .info {
