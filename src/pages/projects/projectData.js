@@ -55,7 +55,7 @@ export const projectsData = [
     iosLink: "https://apps.apple.com/ae/app/ubuy-international-shopping/id613084551",
     webLink: "https://ubuy.com/",
   },
-  {
+  { 
     id: 6,
     title: "Smart Data Transfer: Clone It",
     image: img6,
